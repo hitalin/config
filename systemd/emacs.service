@@ -1,0 +1,13 @@
+[Unit]
+Description=Emacs text editor
+Documentation=info:emacs man:emacs(1) https://gnu.org/software/emacs/
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/emacs --daemon
+ExecStop=/usr/bin/emacsclient --eval "(kill-emacs)"
+Environment="LC_CTYPE=ja_JP.UTF-8" "XMODIFIERS=@im=fcitx"
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

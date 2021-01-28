@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-scale '/home/taka/dotfiles/desktop/wallpaper/IanMallett_MandelbrotSet.png'
