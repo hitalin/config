@@ -1,0 +1,22 @@
+default:        basic alacritty dunst i3 i3blocks ranger rofi
+.PHONY: default basic alacritty dunst i3 i3blocks ranger rofi
+
+alacritty:
+	- ln -s $(CURDIR)/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+
+dunst:
+	- ln -s $(CURDIR)/dunst/dunstrc ~/.config/dunst/dunstrc
+
+i3:
+	- ln -s $(CURDIR)/i3/config ~/.config/i3/config
+
+i3blocks:
+	- ln -s $(CURDIR)/i3blocks/config ~/.config/i3blocks/config
+
+ranger:
+	- ln -s $(CURDIR)/ranger/rc.conf ~/.config/ranger/rc.conf
+	- ln -s $(CURDIR)/ranger/rifle.conf ~/.config/ranger/rifle.conf
+	- ln -s $(CURDIR)/ranger/colorschemes/mycolor.py ~/.config/ranger/colorschemes/mycolor.py
+
+rofi:
+	- ln -s $(CURDIR)/rofi/config.rasi ~/.config/rofi/config.rasi
