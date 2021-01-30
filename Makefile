@@ -7,6 +7,10 @@ alacritty:
 dunst:
 	- ln -s $(CURDIR)/dunst/dunstrc ~/.config/dunst/dunstrc
 
+cmus:
+	- ln -s $(CURDIR)/cmus/rc ~/.config/cmus/rc
+	- ln -s $(CURDIR)/cmus/mycolor.theme ~/.config/cmus/mycolor.theme
+
 i3:
 	- ln -s $(CURDIR)/i3/config ~/.config/i3/config
 
