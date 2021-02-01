@@ -6,7 +6,7 @@ my ~/.config
 # make symblic links
 
 ## Make
-$ ln -s /home/taka/config/hoge/hoge.conf /home/taka/.config/hoge/hoge.conf
+$ make
 
 ## TODO: use rcm
 $ env RCRC=config/rcrc rcup
