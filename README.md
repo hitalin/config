@@ -3,5 +3,5 @@ my ~/.config
 
 
 
-# make symblic links
+# add links
 $ make

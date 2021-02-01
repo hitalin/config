@@ -1,5 +1,5 @@
-default:        basic alacritty dunst i3 i3blocks ranger rofi
-.PHONY: default basic alacritty dunst i3 i3blocks ranger rofi
+default:        basic alacritty dunst i3 i3blocks ranger rofi systemd
+.PHONY: default basic alacritty dunst i3 i3blocks ranger rofi systemd
 
 alacritty:
 	- ln -s $(CURDIR)/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
@@ -24,3 +24,6 @@ ranger:
 
 rofi:
 	- ln -s $(CURDIR)/rofi/config.rasi ~/.config/rofi/config.rasi
+
+systemd:
+	- ln $(CURDIR)/systemd/user/emacs.service ~/.config/systemd/user/emacs.service
