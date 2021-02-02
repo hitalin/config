@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale '/home/taka/config/feh/IanMallett_MandelbrotSet.png'
+feh --no-fehbg --bg-scale ~/config/feh/IanMallett_MandelbrotSet.png
