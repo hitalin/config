@@ -1,5 +1,9 @@
-default:        basic alacritty dunst cmus mpd ncmpcpp i3 i3blocks ranger rofi zathura systemd
-.PHONY: default basic alacritty dunst cmus mpd ncmpcpp i3 i3blocks ranger rofi zathura systemd
+default:        basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks ranger rofi zathura systemd
+.PHONY: default basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks ranger rofi zathura systemd
+
+pandoc:
+	- ln -s $(CURDIR)/pandoc/templates/mytemplate.latex ~/.config/pandoc/templates/mytemplate.latex
+	- ln -s $(CURDIR)/pandoc/templates/mytemplate.beamer ~/.config/pandoc/templates/mytemplate.beamer
 
 alacritty:
 	- ln -s $(CURDIR)/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
