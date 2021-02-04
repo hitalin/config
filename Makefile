@@ -1,5 +1,5 @@
-default:        basic alacritty dunst i3 i3blocks ranger rofi zathura systemd
-.PHONY: default basic alacritty dunst i3 i3blocks ranger rofi zathura systemd
+default:        basic alacritty dunst cmus mpd ncmpcpp i3 i3blocks ranger rofi zathura systemd
+.PHONY: default basic alacritty dunst cmus mpd ncmpcpp i3 i3blocks ranger rofi zathura systemd
 
 alacritty:
 	- ln -s $(CURDIR)/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
@@ -13,6 +13,10 @@ cmus:
 
 mpd:
 	- ln -s $(CURDIR)/mpd/mpd.conf ~/.config/mpd/mpd.conf
+
+ncmpcpp:
+	- ln -s $(CURDIR)/ncmpcpp/config ~/.config/ncmpcpp/config
+	- ln -s $(CURDIR)/ncmpcpp/key ~/.config/ncmpcpp/keys
 
 i3:
 	- ln -s $(CURDIR)/i3/config ~/.config/i3/config
