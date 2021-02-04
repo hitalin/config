@@ -11,6 +11,9 @@ cmus:
 	- ln -s $(CURDIR)/cmus/rc ~/.config/cmus/rc
 	- ln -s $(CURDIR)/cmus/mycolor.theme ~/.config/cmus/mycolor.theme
 
+mpd:
+	- ln -s $(CURDIR)/mpd/mpd.conf ~/.config/mpd/mpd.conf
+
 i3:
 	- ln -s $(CURDIR)/i3/config ~/.config/i3/config
 
