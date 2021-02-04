@@ -1,5 +1,5 @@
-default:        basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks ranger rofi zathura systemd
-.PHONY: default basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks ranger rofi zathura systemd
+default:        basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks ranger rofi zathura
+.PHONY: default basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks ranger rofi zathura
 
 pandoc:
 	- ln -s $(CURDIR)/pandoc/templates/mytemplate.latex ~/.config/pandoc/templates/mytemplate.latex
@@ -38,6 +38,3 @@ rofi:
 
 zathura:
 	- ln -s $(CURDIR)/zathura/zathurarc ~/.config/zathura/zathurarc
-
-systemd:
-	- ln $(CURDIR)/systemd/user/emacs.service ~/.config/systemd/user/emacs.service
