@@ -1,5 +1,5 @@
-default:        basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks ranger rofi zathura
-.PHONY: default basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks ranger rofi zathura
+default:        basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
+.PHONY: default basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
 
 pandoc:
 	- ln -s $(CURDIR)/pandoc/templates/mytemplate.latex ~/.config/pandoc/templates/mytemplate.latex
@@ -27,6 +27,9 @@ i3:
 
 i3blocks:
 	- ln -s $(CURDIR)/i3blocks/config ~/.config/i3blocks/config
+
+gtk-3.0:
+	- ln -s $(CURDIR)/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
 
 ranger:
 	- ln -s $(CURDIR)/ranger/rc.conf ~/.config/ranger/rc.conf
