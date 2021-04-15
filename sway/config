@@ -185,7 +185,7 @@ smart_borders no_gaps
 for_window [class="^.*"] border pixel 1
 #new_window 1pixel
 
-output "*" background /home/taka/config/sway/IanMallett_MandelbrotSet.png fill
+output "*" background /home/taka/config/wallpaper/IanMallett_MandelbrotSet.png fill
 
 # startup
 #exec --no-startup-id udiskie --tray
