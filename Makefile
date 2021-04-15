@@ -1,5 +1,5 @@
-default:        basic pandoc alacritty dunst cmus mpd ncmpcpp sway gtk-3.0 ranger rofi zathura
-.PHONY: default basic pandoc alacritty dunst cmus mpd ncmpcpp sway gtk-3.0 ranger rofi zathura
+default:        basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
+.PHONY: default basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
 
 pandoc:
 	- ln -s $(CURDIR)/pandoc/templates/mytemplate.latex ~/.config/pandoc/templates/mytemplate.latex
@@ -22,14 +22,14 @@ ncmpcpp:
 	- ln -s $(CURDIR)/ncmpcpp/config ~/.config/ncmpcpp/config
 	- ln -s $(CURDIR)/ncmpcpp/key ~/.config/ncmpcpp/keys
 
-sway:
-	- ln -s $(CURDIR)/sway/config ~/.config/sway/config
+i3:
+	- ln -s $(CURDIR)/i3/config ~/.config/i3/config
 
-#i3:
-#	- ln -s $(CURDIR)/i3/config ~/.config/i3/config
+i3blocks:
+	- ln -s $(CURDIR)/i3blocks/config ~/.config/i3blocks/config
 
-#i3blocks:
-#	- ln -s $(CURDIR)/i3blocks/config ~/.config/i3blocks/config
+#sway:
+#	- ln -s $(CURDIR)/sway/config ~/.config/sway/config
 
 gtk-3.0:
 	- ln -s $(CURDIR)/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
