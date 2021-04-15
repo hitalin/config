@@ -195,6 +195,9 @@ exec dropbox
 exec --no-startup-id greenclip daemon
 
 # keymap
+input * xkb_layout  jp
+input * xkb_model   jp106
+
 input "type:keyboard" {
   xkb_options caps:ctrl_modifier
 }
