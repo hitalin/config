@@ -26,6 +26,7 @@ i3:
 	- ln -s $(CURDIR)/i3/config ~/.config/i3/config
 
 i3blocks:
+	- git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks
 	- ln -s $(CURDIR)/i3blocks/config ~/.config/i3blocks/config
 
 #sway:
