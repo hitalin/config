@@ -39,6 +39,7 @@ ranger:
 	- ln -s $(CURDIR)/ranger/rc.conf ~/.config/ranger/rc.conf
 	- ln -s $(CURDIR)/ranger/rifle.conf ~/.config/ranger/rifle.conf
 	- ln -s $(CURDIR)/ranger/scope.sh ~/.config/ranger/scope.sh
+	- mkdir -p $(CURDIR)/ranger/colorschemes ~/.config/ranger/colorschemes
 	- ln -s $(CURDIR)/ranger/colorschemes/mycolor.py ~/.config/ranger/colorschemes/mycolor.py
 
 rofi:
