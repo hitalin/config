@@ -38,6 +38,7 @@ gtk-3.0:
 ranger:
 	- ln -s $(CURDIR)/ranger/rc.conf ~/.config/ranger/rc.conf
 	- ln -s $(CURDIR)/ranger/rifle.conf ~/.config/ranger/rifle.conf
+	- ln -s $(CURDIR)/ranger/scope.sh ~/.config/ranger/scope.sh
 	- ln -s $(CURDIR)/ranger/colorschemes/mycolor.py ~/.config/ranger/colorschemes/mycolor.py
 
 rofi:
