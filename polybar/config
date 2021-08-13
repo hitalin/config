@@ -4,3 +4,5 @@ modules-right = date
 [module/date]
 type = internal/date
 date = %Y-%m-%d%
+
+; vim:ft=dosini
