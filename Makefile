@@ -1,5 +1,5 @@
-default:        basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks polybar gtk-3.0 ranger rofi zathura
-.PHONY: default basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks polybar gtk-3.0 ranger rofi zathura
+default:        basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
+.PHONY: default basic pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
 
 pandoc:
 	- mkdir -p $(CURDIR)/pandoc/templates ~/.config/pandoc/templates
@@ -36,9 +36,7 @@ i3blocks:
 	- git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks
 	- ln -s $(CURDIR)/i3blocks/config ~/.config/i3blocks/config
 
-polybar:
-	- git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
-	- ~/polybar-themes/setup.sh
+#polybar:
 #	- mkdir -p $(CURDIR)/polybar ~/.config/polybar
 #	- ln -s $(CURDIR)/polybar/config ~/.config/polybar/config
 #	- ln -s $(CURDIR)/polybar/launch.sh ~/.config/polybar/launch.sh
