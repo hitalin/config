@@ -173,7 +173,7 @@ bindsym $mod+r mode "resize"
 #        position top
 #        font pango:DejaVu Sans Mono 10
 #}
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh --blocks
 
 # for only i3-gaps
 gaps outer 2

@@ -37,11 +37,11 @@ i3blocks:
 	- ln -s $(CURDIR)/i3blocks/config ~/.config/i3blocks/config
 
 polybar:
-	- mkdir -p $(CURDIR)/polybar ~/.config/polybar
-	- ln -s $(CURDIR)/polybar/config ~/.config/polybar/config
-	- ln -s $(CURDIR)/polybar/launch.sh ~/.config/polybar/launch.sh
-	- ln -s $(CURDIR)/polybar/power.sh ~/.config/polybar/power.sh
-	- ln -s $(CURDIR)/polybar/spotify.sh ~/.config/polybar/spotify.sh
+	- git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+	- ~/polybar-themes/setup.sh
+#	- mkdir -p $(CURDIR)/polybar ~/.config/polybar
+#	- ln -s $(CURDIR)/polybar/config ~/.config/polybar/config
+#	- ln -s $(CURDIR)/polybar/launch.sh ~/.config/polybar/launch.sh
 
 #sway:
 #	- mkdir -p $(CURDIR)/sway ~/.config/sway
