@@ -7,7 +7,6 @@ EnumerateSkipFirst=False
 [Hotkey/TriggerKeys]
 0=Control+space
 1=Zenkaku_Hankaku
-2=Hangul
 
 [Hotkey/AltTriggerKeys]
 0=Shift_L
@@ -25,10 +24,10 @@ EnumerateSkipFirst=False
 0=Shift+Super+space
 
 [Hotkey/ActivateKeys]
-0=Hangul_Hanja
+0=Henkan
 
 [Hotkey/DeactivateKeys]
-0=Hangul_Romaja
+0=Muhenkan
 
 [Hotkey/PrevPage]
 0=Up
