@@ -2,7 +2,7 @@
 # Group Name
 Name=Default
 # Layout
-Default Layout=us
+Default Layout=ja
 # Default Input Method
 DefaultIM=mozc
 
@@ -10,13 +10,13 @@ DefaultIM=mozc
 # Name
 Name=keyboard-us
 # Layout
-Layout=
+Layout=ja
 
 [Groups/0/Items/1]
 # Name
 Name=mozc
 # Layout
-Layout=
+Layout=ja
 
 [GroupOrder]
 0=Default
