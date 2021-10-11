@@ -3,8 +3,8 @@ default:        basic fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks
 
 fcitx5:
 	- mkdir -p $(CURDIR)/fcitx5 ~/.config/fcitx5
-	- ln -s $(CURDIR)/fcitx5/config ~/.config/fcitx5/config
-	- ln -s $(CURDIR)/fcitx5/profile ~/.config/fcitx5/profile
+	- ln $(CURDIR)/fcitx5/config ~/.config/fcitx5/config
+	- ln $(CURDIR)/fcitx5/profile ~/.config/fcitx5/profile
 
 pandoc:
 	- mkdir -p $(CURDIR)/pandoc/templates ~/.config/pandoc/templates
