@@ -4,4 +4,7 @@ my ~/.config
 
 
 # add links
+
+```console
 $ make
+```
