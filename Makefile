@@ -1,5 +1,5 @@
-default:        basic fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
-.PHONY: default basic fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
+default:        basic fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 gtk-3.0 ranger rofi zathura
+.PHONY: default basic fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 gtk-3.0 ranger rofi zathura
 
 fcitx5:
 	- mkdir -p $(CURDIR)/fcitx5 ~/.config/fcitx5
@@ -37,9 +37,9 @@ i3:
 	- mkdir -p $(CURDIR)/i3 ~/.config/i3
 	- ln -s $(CURDIR)/i3/config ~/.config/i3/config
 
-i3blocks:
-	- git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks
-	- ln -s $(CURDIR)/i3blocks/config ~/.config/i3blocks/config
+#i3blocks:
+#	- git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks
+#	- ln -s $(CURDIR)/i3blocks/config ~/.config/i3blocks/config
 
 #polybar:
 #	- mkdir -p $(CURDIR)/polybar ~/.config/polybar
