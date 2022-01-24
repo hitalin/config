@@ -1,6 +1,6 @@
 # zathurarc - with solarized color scheme
 
-set font                        "Cica 9"
+set font                        "Iosevka Nerd Font 9"
 set default-bg                  "#fdf6e3"
 set default-fg                  "#657b83"
 
