@@ -45,10 +45,10 @@ markup=none
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.
-[memory]
-label=MEM
-separator=false
-interval=30
+#[memory]
+#label=MEM
+#separator=false
+#interval=30
 
 #[memory]
 #label=SWAP
@@ -72,7 +72,7 @@ interval=30
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [iface]
 #IFACE=wlan0
-color=#00FF00
+color=#FFFFFF
 interval=10
 separator=false
 
@@ -91,15 +91,15 @@ interval=5
 #
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
-[cpu_usage]
-label=CPU
-interval=10
-min_width=CPU 100.00%
+#[cpu_usage]
+#label=CPU
+#interval=10
+#min_width=CPU 100.00%
 #separator=false
 
-[load_average]
-label=LOAD
-interval=10
+#[load_average]
+#label=LOAD
+#interval=10
 
 # Battery indicator
 #
@@ -111,9 +111,9 @@ interval=10
 
 # Date Time
 #
-[time]
-command=date '+%Y-%m-%d %H:%M:%S'
-interval=5
+#[time]
+#command=date '+%Y-%m-%d %H:%M:%S'
+#interval=5
 
 # Generic media player support
 #
