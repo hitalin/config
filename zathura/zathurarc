@@ -1,6 +1,6 @@
 # zathurarc - with solarized color scheme
 
-set font                        "Iosevka Nerd Font 9"
+set font                        "IBM Plex Sans JP 9"
 set default-bg                  "#fdf6e3"
 set default-fg                  "#657b83"
 
