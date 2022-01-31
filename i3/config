@@ -172,12 +172,12 @@ bar {
         status_command SCRIPT_DIR=$HOME/.config/i3blocks i3blocks
         position bottom
         font pango:IBM Plex Sans 10
-        colors {
-                statusline $blue
-                focused_statusline $blue
-                separator $secondary
-                focused_separator $secondary
-        }
+#        colors {
+#                statusline $blue
+#                focused_statusline $blue
+#                separator $secondary
+#                focused_separator $secondary
+#        }
 }
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh --panels
 
