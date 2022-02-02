@@ -10,7 +10,7 @@ set confirm_run=true
 set continue=true
 set device=/dev/cdrom
 set display_artist_sort_name=false
-set dsp.alsa.device=
+set dsp.alsa.device=default
 set format_current= %a - %l -%3n. %t%=
 set format_playlist= %-20%a %-20%l %3n. %t%= %d
 set format_playlist_va= %-25%A %3n. %t (%a)%= %d
@@ -20,10 +20,10 @@ set format_trackwin_va=%3n. %t (%a)%= %d
 set icecast_default_charset=ISO-8859-1
 set id3_default_charset=ISO-8859-1
 set lib_sort=album discnumber tracknumber albumartist title filename artist
-set mixer.alsa.channel=
-set mixer.alsa.device=
+set mixer.alsa.channel=Master
+set mixer.alsa.device=default
 set mixer.pulse.restore_volume=1
-set output_plugin=pulse
+set output_plugin=alsa
 set passwd=
 set pl_sort=albumartist album discnumber tracknumber title filename artist
 set play_library=true
