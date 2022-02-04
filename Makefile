@@ -1,5 +1,23 @@
-default:        basic fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
-.PHONY: default basic fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
+default:        basic nvim fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
+.PHONY: default basic nvim fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
+
+nvim:
+	- mkdir -p $(CURDIR)/nvim ~/.config/nvim
+	- mkdir -p $(CURDIR)/nvim ~/.config/nvim/rc
+	- mkdir -p $(CURDIR)/nvim ~/.config/nvim/plugins
+	- ln -s $(CURDIR)/nvim/init.vim ~/.config/nvim/init.vim
+	- ln -s $(CURDIR)/nvim/rc/filetype.rc.vim ~/.config/nvim/rc/filetype.rc.vim
+	- ln -s $(CURDIR)/nvim/rc/indent.rc.vim ~/.config/nvim/rc/indent.rc.vim
+	- ln -s $(CURDIR)/nvim/rc/settings.rc.vim ~/.config/nvim/rc/settings.rc.vim
+	- ln -s $(CURDIR)/nvim/plugins/ale.rc.vim ~/.config/nvim/plugins/ale.rc.vim
+	- ln -s $(CURDIR)/nvim/plugins/defx.rc.vim ~/.config/nvim/plugins/defx.rc.vim
+	- ln -s $(CURDIR)/nvim/plugins/dein_lazy.toml ~/.config/nvim/plugins/dein_lazy.toml
+	- ln -s $(CURDIR)/nvim/plugins/dein.toml ~/.config/nvim/plugins/dein.toml
+	- ln -s $(CURDIR)/nvim/plugins/deoplete.rc.vim ~/.config/nvim/plugins/deoplete.rc.vim
+	- ln -s $(CURDIR)/nvim/plugins/fzf.rc.vim ~/.config/nvim/plugins/fzf.rc.vim
+	- ln -s $(CURDIR)/nvim/plugins/neosnippet.rc.vim ~/.config/nvim/plugins/neosnippet.rc.vim
+	- ln -s $(CURDIR)/nvim/plugins/vim-lsp.rc.vim ~/.config/nvim/plugins/vim-lsp.rc.vim
+	- ln -s $(CURDIR)/nvim/plugins/vimtex.rc.vim ~/.config/nvim/plugins/vimtex.rc.vim
 
 fcitx5:
 	- mkdir -p $(CURDIR)/fcitx5 ~/.config/fcitx5
