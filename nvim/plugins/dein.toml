@@ -2,112 +2,113 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'sheerun/vim-polyglot'
-hook_add = '''
-let g:polyglot_disabled = ['markdown', 'cuda']
-'''
+repo = 'wsdjeg/dein-ui.vim'
 
 [[plugins]]
-repo = 'bfrg/vim-cuda-syntax'
-hook_add = '''
-" Highlight keywords from CUDA Runtime API
-let g:cuda_runtime_api_highlight = 1
-
-" Highlight keywords from CUDA Driver API
-let g:cuda_driver_api_highlight = 1
-
-" Highlight keywords from CUDA Thrust library
-let g:cuda_thrust_highlight = 1
-
-" Disable highlighting of CUDA kernel calls
-let g:cuda_no_kernel_highlight = 1
-'''
+repo = 'airblade/vim-rooter'
 
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
 build = 'make'
 
 [[plugins]]
-repo = 'Shougo/echodoc.vim'
-hook_add = '''
-  set noshowmode
-  let g:echodoc#type = 'floating'
-  call echodoc#enable()
-'''
-
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
-hook_add = '''
-  source ~/.config/nvim/plugins/deoplete.rc.vim
-  let g:deoplete#enable_at_startup = 1
-'''
-
-[[plugins]]
-repo = 'ncm2/float-preview.nvim'
-if = 'has("nvim")'
-hook_add = '''
-  let g:float_preview#docked = 1
-
-  function! DisableExtras()
-    call nvim_win_set_option(g:float_preview#win, 'number', v:false)
-    call nvim_win_set_option(g:float_preview#win, 'relativenumber', v:false)
-    call nvim_win_set_option(g:float_preview#win, 'cursorline', v:false)
-  endfunction
-
-  autocmd User FloatPreviewWinOpen call DisableExtras()
-'''
-
-[[plugins]]
-repo = 'prabirshrestha/async.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/vim-lsp'
-hook_add = '''
-  let g:lsp_log_file = ''
-  let g:lsp_log_verbose = 1
-  let g:lsp_diagnostics_enabled = 0
-  source ~/.config/nvim/plugins/vim-lsp.rc.vim
-'''
-
-[[plugins]]
-repo = 'lighttiger2505/deoplete-vim-lsp'
-
-[[plugins]]
-repo = 'sff1019/vim-brogrammer-theme'
-
-[[plugins]]
-repo = 'w0rp/ale'
-hook_add = '''
-  source ~/.config/nvim/plugins/ale.rc.vim
-'''
-
-[[plugins]]
 repo = 'junegunn/fzf'
 build = './install --all'
-merged = false
 
 [[plugins]]
-repo = 'junegunn/fzf.vim'
-depends = 'fzf'
+repo = 'neoclide/coc.nvim'
+hook_add = """
+  source ~/.config/nvim/plugins/coc.rc.vim
+"""
+
+[[plugins]]
+repo = 'yuki-yano/fzf-preview.vim'
+
+[[plugins]]
+repo = 'mhinz/vim-startify'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = """
+  source ~/.config/nvim/plugins/lightline.rc.vim
+"""
+
+[[plugins]]
+repo = 'liuchengxu/vista.vim'
+hook_add = """
+  source ~/.config/nvim/plugins/vista.rc.vim
+"""
+
+[[plugins]]
+repo = 'itchyny/vim-gitbranch'
+
+[[plugins]]
+repo = 'mbbill/undotree'
+hook_add = """
+  nnoremap <F5> :UndotreeToggle<CR>
+"""
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'tpope/vim-repeat'
+
+[[plugins]]
+repo = 'mattn/sonictemplate-vim'
+hook_add = """
+  let g:sonictemplate_vim_template_dir = expand('~/.vim/sonictemplate')
+"""
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
 hook_add = '''
-  source ~/.config/nvim/plugins/fzf.rc.vim
+  let g:UltiSnipsExpandTrigger="<s-tab>"
+  let g:UltiSnipsJumpForwardTrigger="<c-b>"
+  let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+  let g:UltiSnipsEditSplit="vertical"
 '''
 
 [[plugins]]
-repo = 'rhysd/accelerated-jk'
+repo = 'honza/vim-snippets'
+
+[[plugins]]
+repo = 'terryma/vim-expand-region'
+
+[[plugins]]
+repo = 'junegunn/vim-easy-align'
+
+[[plugins]]
+repo = 'preservim/nerdcommenter'
+
+[[plugins]]
+repo = 'justinmk/vim-sneak'
+
+[[plugins]]
+repo = 'unblevable/quick-scope'
+
+[[plugins]]
+repo = 'kassio/neoterm'
 hook_add = '''
-  nmap j <Plug>(accelerated_jk_gj)
-  nmap k <Plug>(accelerated_jk_gk)
+  let g:neoterm_default_mod='belowright'
+  let g:neoterm_size=10
+  let g:neoterm_autoscroll=1
+  tnoremap <silent> <C-w> <C-\><C-n><C-w>
+  nnoremap <silent> <C-n> :TREPLSendLine<CR>j0
+  vnoremap <silent> <C-n> V:TREPLSendSelection<CR>'>j0
 '''
 
 [[plugins]]
-repo = 'vim-scripts/YankRing.vim'
+repo = 'Shougo/vinarise.vim'
 hook_add = '''
-  let g:yankring_clipboard_monitor=0
+  augroup BinaryXXD
+    autocmd!
+    autocmd BufReadPre  *.bin let &binary =1
+    autocmd BufReadPost * if &binary | Vinarise
+    autocmd BufWritePre * if &binary | Vinarise | endif
+    autocmd BufWritePost * if &binary | Vinarise
+  augroup END
 '''
-
-[[plugins]]
-repo = 'tomtom/tcomment_vim'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
@@ -116,40 +117,13 @@ repo = 'airblade/vim-gitgutter'
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
-repo = 'ryanoasis/vim-devicons'
-
-[[plugins]]
-repo = 'vim-airline/vim-airline'
-hook_add = '''
-  let g:airline#extensions#tabline#enabled = 1
-  let g:airline_powerline_fonts = 1
-  let g:airline#extensions#tabline#fnamemod = ':t'
-  let g:airline#extensions#tabline#left_sep = '  '
-  let g:airline#extensions#tabline#left_alt_sep = ' '
-  let g:airline_left_sep = ' '
-  let g:airline_right_sep = ' '
-'''
-
-[[plugins]]
-repo = 'vim-airline/vim-airline-themes'
-
-[[plugins]]
 repo = 'vim-scripts/AnsiEsc.vim'
 
 [[plugins]]
-repo = 'sh8/semshi'
+repo = 'numirias/semshi'
 
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
-
-[[plugins]]
-repo = 'previm/previm'
-hook_add = '''
-  let g:previm_open_cmd = 'open -a Google\ Chrome'
-'''
-
-[[plugins]]
-repo = 'jiangmiao/auto-pairs'
 
 [[plugins]]
 repo = 'lervag/vimtex'

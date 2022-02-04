@@ -1,4 +1,64 @@
 [[plugins]]
+repo = 'lilydjwg/fcitx.vim'
+
+[[plugins]]
+repo = 'ntpeters/vim-better-whitespace'
+hook_add = '''
+  let g:better_whitespace_filetypes_blacklist=['denite', 'defx', 'diff', 'gitcommit', 'unite', 'qf', 'help']
+  autocmd FileType markdown EnableWhitespace
+'''
+
+[[plugins]]
+repo = 'chrisbra/Colorizer'
+hook_add = '''
+  autocmd BufNewFile,BufRead *.css,*.scss,*.html,*.htm  :ColorHighlight!
+'''
+
+[[plugins]]
+repo = 'whatyouhide/vim-gotham'
+
+[[plugins]]
+repo = 'octol/vim-cpp-enhanced-highlight'
+hook_add = '''
+  let g:cpp_class_scope_highlight = 1
+  let g:cpp_member_variable_highlight = 1
+  let g:cpp_class_decl_highlight = 1
+  let g:cpp_experimental_template_highlight = 1
+  let g:cpp_concepts_highlight = 1
+'''
+
+[[plugins]]
+repo = 'vim-python/python-syntax'
+hook_add = '''
+  let g:python_highlight_all = 1
+'''
+
+[[plugins]]
+repo = 'neovimhaskell/haskell-vim'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+
+[[plugins]]
+repo = 'kristijanhusak/orgmode.nvim'
+
+[[plugins]]
+repo = 'tpope/vim-speeddating'
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+build = 'sh -c "cd app & yarn install"'
+
+[[plugins]]
+repo = 'roxma/nvim-yarp'
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+
+[[plugins]]
 repo = 'Shougo/defx.nvim'
 depends = ['defx-icons', 'defx-git']
 hook_add = '''
@@ -22,15 +82,3 @@ repo = 'kristijanhusak/defx-git'
 defx= '''
   source ~/.config/nvim/plugins/defx.rc.vim
 '''
-
-[[plugins]]
-repo = 'Shougo/neosnippet.vim'
-depends = 'neosnippet-snippets'
-on_event = 'InsertCharPre'
-on_ft = 'snippet'
-hook_add = '''
-  source ~/.config/nvim/plugins/neosnippet.rc.vim
-'''
-
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
