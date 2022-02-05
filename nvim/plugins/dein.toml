@@ -38,7 +38,6 @@ hook_add = '''
 repo = 'itchyny/lightline.vim'
 hook_add = """
   source ~/.config/nvim/plugins/lightline.rc.vim
-  let g:lightline = { 'colorscheme': 'gotham' }
   let g:lightline = { 'colorscheme': 'gotham256' }
 ''
 """
