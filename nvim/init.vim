@@ -8,8 +8,7 @@ source ~/.config/nvim/rc/filetype.rc.vim
 source ~/.config/nvim/rc/indent.rc.vim
 
 " Dein {{{
-let s:vimdir = $HOME . '/.vim'
-let s:dein_dir = s:vimdir . '/dein'
+let s:dein_dir = expand('~/.cache/dein')
 let s:dein_github = s:dein_dir . '/repos/github.com'
 let s:dein_repo_name = 'Shougo/dein.vim'
 let s:dein_repo_dir = s:dein_github . '/' . s:dein_repo_name
