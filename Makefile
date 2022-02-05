@@ -12,6 +12,7 @@ nvim:
 	- ln -s $(CURDIR)/nvim/rc/color.rc.vim ~/.config/nvim/rc/color.rc.vim
 	- ln -s $(CURDIR)/nvim/plugins/dein_lazy.toml ~/.config/nvim/plugins/dein_lazy.toml
 	- ln -s $(CURDIR)/nvim/plugins/dein.toml ~/.config/nvim/plugins/dein.toml
+	- ln -s $(CURDIR)/nvim/plugins/coc.rc.vim ~/.config/nvim/plugins/coc.rc.vim
 	- ln -s $(CURDIR)/nvim/plugins/defx.rc.vim ~/.config/nvim/plugins/defx.rc.vim
 	- ln -s $(CURDIR)/nvim/plugins/vimtex.rc.vim ~/.config/nvim/plugins/vimtex.rc.vim
 	- ln -s $(CURDIR)/nvim/plugins/lightline.rc.vim ~/.config/nvim/plugins/lightline.rc.vim
