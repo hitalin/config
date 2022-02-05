@@ -29,9 +29,18 @@ repo = 'yuki-yano/fzf-preview.vim'
 repo = 'mhinz/vim-startify'
 
 [[plugins]]
+repo = 'whatyouhide/vim-gotham'
+hook_add = '''
+  colorscheme gotham256
+'''
+
+[[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = """
   source ~/.config/nvim/plugins/lightline.rc.vim
+  let g:lightline = { 'colorscheme': 'gotham' }
+  let g:lightline = { 'colorscheme': 'gotham256' }
+''
 """
 
 [[plugins]]

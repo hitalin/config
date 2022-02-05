@@ -21,4 +21,5 @@ if dein#tap('lightline.vim')
         \   'vista': 'NearestMethodOrFunction',
         \ },
         \ }
+
 endif
