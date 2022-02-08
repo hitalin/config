@@ -37,10 +37,13 @@ repo = 'neovimhaskell/haskell-vim'
 repo = 'cespare/vim-toml'
 
 [[plugins]]
-repo = 'kristijanhusak/orgmode.nvim'
+repo = 'nvim-treesitter/nvim-treesitter'
 
 [[plugins]]
-repo = 'tpope/vim-speeddating'
+repo = 'nvim-orgmode/orgmode'
+hook_add = '''
+  source ~/.config/nvim/plugins/orgmode.rc.vim
+'''
 
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
