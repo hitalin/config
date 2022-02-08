@@ -1,0 +1,93 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet for
+for (int ${1} = 0; $1 < ${2}; $1++) {
+	${0:TARGET}
+}
+endsnippet
+
+
+snippet while
+while (${1:#:condition}) {
+	${0:TARGET}
+}
+endsnippet
+
+snippet main
+int main(${1:int argc, char const **argv}) {
+	${2:TARGET};
+	return 0;
+}
+endsnippet
+
+snippet include
+#include <${1:iostream}>${0}
+endsnippet
+
+snippet template
+template <typename ${1:T}>
+endsnippet
+
+snippet foreach
+for (${1:auto &&} ${2:var} : ${3:container}) {
+	${0:TARGET}
+}
+endsnippet
+
+snippet namespace
+namespace ${1:#:name} {
+	${0:TARGET}
+}
+endsnippet
+
+snippet using-namespace
+using namespace ${0:TARGET};
+endsnippet
+
+snippet cin
+cin >> ${0:TARGET};
+endsnippet
+
+snippet cout
+cout << ${0:TARGET} << endl;
+endsnippet
+
+snippet cerr
+cerr << ${0:TARGET} << endl;
+endsnippet
+
+snippet std::cin
+std::cin >> ${0:TARGET};
+endsnippet
+
+snippet std::cout
+std::cout << ${0:TARGET} << std::endl;
+endsnippet
+
+snippet std::cerr
+std::cerr << ${0:TARGET} << std::endl;
+endsnippet
