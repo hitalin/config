@@ -17,6 +17,7 @@ nvim:
 	- ln -s $(CURDIR)/nvim/plugins/vimtex.rc.vim ~/.config/nvim/plugins/vimtex.rc.vim
 	- ln -s $(CURDIR)/nvim/plugins/lightline.rc.vim ~/.config/nvim/plugins/lightline.rc.vim
 	- ln -s $(CURDIR)/nvim/plugins/vista.rc.vim ~/.config/nvim/plugins/vista.rc.vim
+	- ln -s $(CURDIR)/nvim/plugins/nvim-treesitter.rc.vim ~/.config/nvim/plugins/nvim-treesitter.rc.vim
 	- ln -s $(CURDIR)/nvim/plugins/orgmode.rc.vim ~/.config/nvim/plugins/orgmode.rc.vim
 
 fcitx5:
