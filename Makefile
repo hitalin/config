@@ -3,22 +3,19 @@ default:        basic nvim fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 i3b
 
 nvim:
 	- mkdir -p $(CURDIR)/nvim ~/.config/nvim
-	- mkdir -p $(CURDIR)/nvim ~/.config/nvim/rc
-	- mkdir -p $(CURDIR)/nvim ~/.config/nvim/plugins
 	- ln -s $(CURDIR)/nvim/init.vim ~/.config/nvim/init.vim
-	- ln -s $(CURDIR)/nvim/rc/filetype.rc.vim ~/.config/nvim/rc/filetype.rc.vim
-	- ln -s $(CURDIR)/nvim/rc/indent.rc.vim ~/.config/nvim/rc/indent.rc.vim
-	- ln -s $(CURDIR)/nvim/rc/settings.rc.vim ~/.config/nvim/rc/settings.rc.vim
-	- ln -s $(CURDIR)/nvim/rc/color.rc.vim ~/.config/nvim/rc/color.rc.vim
-	- ln -s $(CURDIR)/nvim/plugins/dein_lazy.toml ~/.config/nvim/plugins/dein_lazy.toml
-	- ln -s $(CURDIR)/nvim/plugins/dein.toml ~/.config/nvim/plugins/dein.toml
-	- ln -s $(CURDIR)/nvim/plugins/coc.rc.vim ~/.config/nvim/plugins/coc.rc.vim
-	- ln -s $(CURDIR)/nvim/plugins/defx.rc.vim ~/.config/nvim/plugins/defx.rc.vim
-	- ln -s $(CURDIR)/nvim/plugins/vimtex.rc.vim ~/.config/nvim/plugins/vimtex.rc.vim
-	- ln -s $(CURDIR)/nvim/plugins/lightline.rc.vim ~/.config/nvim/plugins/lightline.rc.vim
-	- ln -s $(CURDIR)/nvim/plugins/vista.rc.vim ~/.config/nvim/plugins/vista.rc.vim
-	- ln -s $(CURDIR)/nvim/plugins/nvim-treesitter.rc.vim ~/.config/nvim/plugins/nvim-treesitter.rc.vim
-	- ln -s $(CURDIR)/nvim/plugins/orgmode.rc.vim ~/.config/nvim/plugins/orgmode.rc.vim
+	- ln -s $(CURDIR)/nvim/setting.vim ~/.config/nvim/settings.vim
+	- ln -s $(CURDIR)/nvim/filetype.vim ~/.config/nvim/filetype.vim
+	- ln -s $(CURDIR)/nvim/dein.toml ~/.config/nvim/dein.toml
+	- ln -s $(CURDIR)/nvim/dein_lazy.toml ~/.config/nvim/dein_lazy.toml
+	- ln -s $(CURDIR)/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
+	- ln -s $(CURDIR)/nvim/after ~/.config/nvim/
+	- ln -s $(CURDIR)/nvim/colors ~/.config/nvim/
+	- ln -s $(CURDIR)/nvim/ftplugin ~/.config/nvim/
+	- ln -s $(CURDIR)/nvim/indent ~/.config/nvim/
+	- ln -s $(CURDIR)/nvim/plugin ~/.config/nvim/
+	- ln -s $(CURDIR)/nvim/sonictemplate ~/.config/nvim/
+	- ln -s $(CURDIR)/nvim/UltiSnips ~/.config/nvim/
 
 fcitx5:
 	- mkdir -p $(CURDIR)/fcitx5 ~/.config/fcitx5
