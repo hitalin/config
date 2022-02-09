@@ -20,7 +20,7 @@ repo = 'neoclide/coc.nvim'
 merge = 0
 rev = "release"
 hook_add = '''
-  source ~/.config/nvim/plugins/coc.rc.vim
+  source ~/.config/nvim/plugin/coc.vim
 '''
 
 [[plugins]]
@@ -30,22 +30,15 @@ repo = 'yuki-yano/fzf-preview.vim'
 repo = 'mhinz/vim-startify'
 
 [[plugins]]
-repo = 'whatyouhide/vim-gotham'
-hook_add = '''
-  colorscheme gotham256
-'''
-
-[[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = '''
-  source ~/.config/nvim/plugins/lightline.rc.vim
-  let g:lightline = { 'colorscheme': 'gotham256' }
+  source ~/.config/nvim/plugin/lightline.vim
 '''
 
 [[plugins]]
 repo = 'liuchengxu/vista.vim'
 hook_add = '''
-  source ~/.config/nvim/plugins/vista.rc.vim
+  source ~/.config/nvim/plugin/vista.vim
 '''
 
 [[plugins]]
@@ -66,7 +59,7 @@ repo = 'tpope/vim-repeat'
 [[plugins]]
 repo = 'mattn/sonictemplate-vim'
 hook_add = '''
-  let g:sonictemplate_vim_template_dir = expand('~/.vim/sonictemplate')
+  let g:sonictemplate_vim_template_dir = expand('~/.config/nvim/sonictemplate')
 '''
 
 [[plugins]]
@@ -137,5 +130,5 @@ repo = 'editorconfig/editorconfig-vim'
 [[plugins]]
 repo = 'lervag/vimtex'
 hook_add = '''
-  source ~/.config/nvim/plugins/vimtex.rc.vim
+  source ~/.config/nvim/plugin/vimtex.vim
 '''
