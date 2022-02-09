@@ -1,5 +1,10 @@
 syntax enable
 
+" Color scheme {{{
+colorscheme gotham256
+let g:lightline = { 'colorscheme': 'gotham256' }
+"}}}
+
 " True color {{{
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
