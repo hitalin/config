@@ -1,4 +1,3 @@
-lua << EOF
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
 parser_config.org = {
   install_info = {
@@ -23,4 +22,3 @@ require('orgmode').setup({
   org_agenda_files = {'~/.ghq/github.com/i0z0m/orgmode/*'},
   org_default_notes_file = '~/.ghq/github.com/i0z0m/orgmode/gtd/inbox.org',
 })
-EOF
