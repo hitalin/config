@@ -2,7 +2,6 @@ syntax enable
 
 " Color scheme {{{
 colorscheme gotham256
-let g:lightline = { 'colorscheme': 'gotham256' }
 "}}}
 
 " True color {{{
