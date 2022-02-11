@@ -36,6 +36,12 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'whatyouhide/vim-gotham'
+hook_add = '''
+  colorscheme gotham256
+'''
+
+[[plugins]]
 repo = 'liuchengxu/vista.vim'
 hook_add = '''
   source ~/.config/nvim/plugin/vista.vim
