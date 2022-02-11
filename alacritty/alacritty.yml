@@ -163,12 +163,12 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-# Colors (Tomorrow Night)
+# Colors (Gotham)
 colors:
   # Default colors
   primary:
-    background: '0x000000'
-    foreground: '0xb2b2b2'
+    background: '0x0a0f14'
+    foreground: '0x98d1ce'
 
     # Bright and dim foreground colors
     #
@@ -224,39 +224,39 @@ colors:
 
   # Normal colors
   normal:
-    black:   '#000000'
-    red:     '#c62828'
-    green:   '#558b2f'
-    yellow:  '#f9a825'
-    blue:    '#1565c0'
-    magenta: '#6a1e9a'
-    cyan:    '#00838f'
-    white:   '#f2f2f2'
+    black: '0x0a0f14'
+    red: '0xc33027'
+    green: '0x26a98b'
+    yellow: '0xedb54b'
+    blue: '0x195465'
+    magenta: '0x4e5165'
+    cyan: '0x33859d'
+    white: '0x98d1ce'
 
   # Bright colors
   bright:
-    black:   '#545454'
-    red:     '#ef5350'
-    green:   '#8bc34a'
-    yellow:  '#ffeb3b'
-    blue:    '#64b5f6'
-    magenta: '#ba68c8'
-    cyan:    '#26c6da'
-    white:   '#e0e0e0'
+    black: '0x10151b'
+    red: '0xd26939'
+    green: '0x081f2d'
+    yellow: '0x245361'
+    blue: '0x093748'
+    magenta: '0x888ba5'
+    cyan: '0x599caa'
+    white: '0xd3ebe9'
 
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based
   # on the `normal` colors.
-  dim:
-    black:   '#333333'
-    red:     '#f2777a'
-    green:   '#99cc99'
-    yellow:  '#ffcc66'
-    blue:    '#6699cc'
-    magenta: '#cc99cc'
-    cyan:    '#66cccc'
-    white:   '#dddddd'
+  #dim:
+  #  black:   '#333333'
+  #  red:     '#f2777a'
+  #  green:   '#99cc99'
+  #  yellow:  '#ffcc66'
+  #  blue:    '#6699cc'
+  #  magenta: '#cc99cc'
+  #  cyan:    '#66cccc'
+  #  white:   '#dddddd'
 
   # Indexed Colors
   #
