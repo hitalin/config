@@ -1,5 +1,6 @@
 [[plugins]]
 repo = 'lilydjwg/fcitx.vim'
+rev = "fcitx5"
 
 [[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
