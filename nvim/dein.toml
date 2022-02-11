@@ -25,6 +25,9 @@ hook_add = '''
 
 [[plugins]]
 repo = 'yuki-yano/fzf-preview.vim'
+hook_add = '''
+  source ~/.config/nvim/plugin/fzf-preview.vim
+'''
 
 [[plugins]]
 repo = 'mhinz/vim-startify'
