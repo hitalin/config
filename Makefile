@@ -4,7 +4,7 @@ default:        basic nvim fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 i3b
 nvim:
 	- mkdir -p $(CURDIR)/nvim ~/.config/nvim
 	- ln -s $(CURDIR)/nvim/init.vim ~/.config/nvim/init.vim
-	- ln -s $(CURDIR)/nvim/setting.vim ~/.config/nvim/settings.vim
+	- ln -s $(CURDIR)/nvim/settings.vim ~/.config/nvim/settings.vim
 	- ln -s $(CURDIR)/nvim/filetype.vim ~/.config/nvim/filetype.vim
 	- ln -s $(CURDIR)/nvim/dein.toml ~/.config/nvim/dein.toml
 	- ln -s $(CURDIR)/nvim/dein_lazy.toml ~/.config/nvim/dein_lazy.toml
