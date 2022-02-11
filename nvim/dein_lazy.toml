@@ -22,12 +22,6 @@ repo = 'iamcco/markdown-preview.nvim'
 build = 'sh -c "cd app & yarn install"'
 
 [[plugins]]
-repo = 'roxma/nvim-yarp'
-
-[[plugins]]
-repo = 'roxma/vim-hug-neovim-rpc'
-
-[[plugins]]
 repo = 'Shougo/defx.nvim'
 depends = ['defx-icons', 'defx-git']
 hook_add = '''
