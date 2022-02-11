@@ -15,18 +15,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'nvim-treesitter/nvim-treesitter'
-hook_add = '''
-  source ~/.config/nvim/plugin/treesitter.lua
-'''
-
-[[plugins]]
-repo = 'nvim-orgmode/orgmode'
-hook_add = '''
-  source ~/.config/nvim/plugin/orgmode.lua
-'''
-
-[[plugins]]
 repo = 'plasticboy/vim-markdown'
 
 [[plugins]]
