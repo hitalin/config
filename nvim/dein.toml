@@ -25,6 +25,7 @@ hook_add = '''
 
 [[plugins]]
 repo = 'yuki-yano/fzf-preview.vim'
+rev = 'release/remote'
 hook_add = '''
   source ~/.config/nvim/plugin/fzf-preview.vim
 '''
