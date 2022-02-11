@@ -5,7 +5,7 @@ if &compatible
 endif
 
 
-source ~/.config/nvim/setting.vim
+source ~/.config/nvim/settings.vim
 source ~/.config/nvim/filetype.vim
 
 " Dein {{{
