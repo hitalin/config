@@ -6,7 +6,7 @@ if dein#tap('lightline.vim')
   endfunction
 
   let g:lightline = {
-        \   'colorscheme' : 'gotham',
+        \ 'colorscheme' : 'gotham',
         \ 'active': {
         \   'left': [ [ 'mode', 'paste' ],
         \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
