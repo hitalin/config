@@ -2,20 +2,8 @@ default:        basic nvim fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 i3b
 .PHONY: default basic nvim fcitx5 pandoc alacritty dunst cmus mpd ncmpcpp i3 i3blocks gtk-3.0 ranger rofi zathura
 
 nvim:
-	- mkdir -p $(CURDIR)/nvim ~/.config/nvim
-	- ln -s $(CURDIR)/nvim/init.vim ~/.config/nvim/init.vim
-	- ln -s $(CURDIR)/nvim/settings.vim ~/.config/nvim/settings.vim
-	- ln -s $(CURDIR)/nvim/filetype.vim ~/.config/nvim/filetype.vim
-	- ln -s $(CURDIR)/nvim/dein.toml ~/.config/nvim/dein.toml
-	- ln -s $(CURDIR)/nvim/dein_lazy.toml ~/.config/nvim/dein_lazy.toml
-	- ln -s $(CURDIR)/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
-	- ln -s $(CURDIR)/nvim/after ~/.config/nvim/
-	- ln -s $(CURDIR)/nvim/colors ~/.config/nvim/
-	- ln -s $(CURDIR)/nvim/ftplugin ~/.config/nvim/
-	- ln -s $(CURDIR)/nvim/indent ~/.config/nvim/
-	- ln -s $(CURDIR)/nvim/plugin ~/.config/nvim/
-	- ln -s $(CURDIR)/nvim/sonictemplate ~/.config/nvim/
-	- ln -s $(CURDIR)/nvim/UltiSnips ~/.config/nvim/
+	- ln -s $(CURDIR)/nvim ~/.config/nvim
+#	- ln -s $(CURDIR)/nvim-nightly ~/.config/nvim
 
 fcitx5:
 	- mkdir -p $(CURDIR)/fcitx5 ~/.config/fcitx5
