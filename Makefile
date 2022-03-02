@@ -4,7 +4,6 @@ XDG_CONFIGS	   = mpv
 
 CONFIG_DIR     = $(HOME)/.config
 NVIM_PATH      = $(CONFIG_DIR)/nvim
-INIT_VIM_PATH  = $(NVIM_PATH)/init.vim
 
 .PHONY: deploy init
 
@@ -17,7 +16,7 @@ $(NVIM_PATH):
 deploy: init
 	@$(foreach val, $(XDG_CONFIGS), ln -sfnv $(abspath $(val)) $(CONFIG_DIR)/$(val);)
 
-init: $(CONFIG_DIR) $(INIT_VIM_PATH)
+init: $(CONFIG_DIR) $(NVIM_PATH)
 
 uninstall:
 	@unlink $(INIT_VIM_PATH)
