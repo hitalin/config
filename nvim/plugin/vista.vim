@@ -6,7 +6,4 @@ if dein#tap('vista.vim')
   set statusline+=%{NearestMethodOrFunction()}
 
   autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
-
-  nmap <silent> <C-f><C-v> :<C-u>Vista coc<CR>
-  nmap <silent> <C-f><C-s> :<C-u>Vista finder coc<CR>
 endif
