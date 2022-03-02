@@ -128,9 +128,3 @@ repo = 'numirias/semshi'
 
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
-
-[[plugins]]
-repo = 'lervag/vimtex'
-hook_add = '''
-  source ~/.config/nvim/plugin/vimtex.vim
-'''

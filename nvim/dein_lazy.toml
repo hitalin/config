@@ -139,6 +139,12 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'lervag/vimtex'
+hook_add = '''
+  source ~/.config/nvim/plugin/vimtex.vim
+'''
+
+[[plugins]]
 repo = 'plasticboy/vim-markdown'
 
 [[plugins]]
