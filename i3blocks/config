@@ -29,11 +29,6 @@ command=$SCRIPT_DIR/$BLOCK_NAME/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-# i3blocks-contrib
-[i3-focusedwindow]
-label=focus: 
-interval=persist
-
 # Volume indicator
 #
 # The first parameter sets the step (and units to display)
