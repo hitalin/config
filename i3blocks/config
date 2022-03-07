@@ -157,33 +157,33 @@ interval=5
 #signal=11
 
 # i3blocks-contrib
-[arch-update] 
-interval=3600
-markup=pango
-LABEL=Pacman: 
+#[arch-update] 
+#interval=3600
+#markup=pango
+#LABEL=Pacman: 
 
 # i3blocks-contrib
-[aur-update]
-markup=pango
-format=json
-interval=43200
-UPDATE_COLOR=red
-QUIET=1
-IGNORE=root vidyodesktop
+#[aur-update]
+#markup=pango
+#format=json
+#interval=43200
+#UPDATE_COLOR=red
+#QUIET=1
+#IGNORE=root vidyodesktop
 #CACHE_UPDATES=0
 
 # i3blocks-contrib
-[dunst]
-interval=once
-format=json
-markup=pango
+#[dunst]
+#interval=once
+#format=json
+#markup=pango
 #min_width=50
 #align=center
 
 # i3blocks-contrib
-[volume-pipewire]
-interval=once
-signal=1
+#[volume-pipewire]
+#interval=once
+#signal=1
 #MIXER=[determined automatically]
 #SCONTROL=[determined automatically]
 ##exposed format variables: ${SYMB}, ${VOL}, ${INDEX}, ${NAME}
