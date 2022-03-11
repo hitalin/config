@@ -122,6 +122,9 @@ repo      = 'p00f/nvim-ts-rainbow'
 on_source = 'nvim-treesitter'
 
 [[plugins]]
+repo = 'github/copilot.vim'
+
+[[plugins]]
 repo = 'lilydjwg/fcitx.vim'
 rev = "fcitx5"
 
