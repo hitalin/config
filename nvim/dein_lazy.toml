@@ -124,9 +124,9 @@ on_source = 'nvim-treesitter'
 [[plugins]]
 repo = 'github/copilot.vim'
 
-[[plugins]]
-repo = 'lilydjwg/fcitx.vim'
-rev = "fcitx5"
+#[[plugins]]
+#repo = 'lilydjwg/fcitx.vim'
+#rev = "fcitx5"
 
 [[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
