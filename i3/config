@@ -173,7 +173,7 @@ bar {
         position bottom
         font pango:IBM Plex Sans 10
 }
-#exec_always --no-startup-id $HOME/.config/polybar/launch.sh --panels
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh --panels
 
 # for only i3-gaps
 gaps outer 2
