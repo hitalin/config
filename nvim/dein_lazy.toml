@@ -98,7 +98,7 @@ depends     = ['nvim-lsp-installer', 'pum.vim']
 
 [[plugins]]
 repo        = 'nvim-lua/plenary.nvim'
-on_evennt   = 'BufEnter'
+on_event    = 'BufEnter'
 
 [[plugins]]
 repo        = 'nvim-lua/popup.nvim'
