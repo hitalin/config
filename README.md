@@ -1,10 +1,7 @@
-# what is this ?
-my ~/.config
-
-
-
-# add links
-
+# setting
 ```console
-$ make
+git clone https://gitlab.com/i0z0m/config.git ~/
+cd ~/config
+make deploy
+./set.sh
 ```
