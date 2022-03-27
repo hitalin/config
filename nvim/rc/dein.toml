@@ -1,11 +1,19 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
+hook_add = 'source ~/.config/nvim/plugins/plugin-dein.vim'
 
 [[plugins]]
 repo = 'wsdjeg/dein-ui.vim'
 
 [[plugins]]
 repo = 'airblade/vim-rooter'
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo     = 'Shougo/echodoc.vim'
+hook_add = 'source ~/.config/nvim/plugins/plugin-echodoc.vim'
 
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
@@ -15,6 +23,21 @@ build = 'make'
 repo = 'vim-denops/denops.vim'
 
 [[plugins]]
+repo = 'Shougo/vinarise.vim'
+hook_add = '''
+  augroup BinaryXXD
+    autocmd!
+    autocmd BufReadPre  *.bin let &binary =1
+    autocmd BufReadPost * if &binary | Vinarise
+    autocmd BufWritePre * if &binary | Vinarise | endif
+    autocmd BufWritePost * if &binary | Vinarise
+  augroup END
+'''
+
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
 repo = 'mhinz/vim-startify'
 
 [[plugins]]
@@ -22,6 +45,9 @@ repo = 'itchyny/lightline.vim'
 hook_add = '''
   source ~/.config/nvim/plugins/plugin-lightline.vim
 '''
+
+[[plugins]]
+repo = 'itchyny/vim-gitbranch'
 
 [[plugins]]
 repo = 'whatyouhide/vim-gotham'
@@ -36,7 +62,11 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'itchyny/vim-gitbranch'
+repo = '5t111111/alt-gtags.vim'
+
+[[plugins]]
+repo = 'miyakogi/seiya.vim'
+hook_add = 'source ~/.config/nvim/plugins/plugin-seiya.vim'
 
 [[plugins]]
 repo = 'mbbill/undotree'
@@ -77,18 +107,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'Shougo/vinarise.vim'
-hook_add = '''
-  augroup BinaryXXD
-    autocmd!
-    autocmd BufReadPre  *.bin let &binary =1
-    autocmd BufReadPost * if &binary | Vinarise
-    autocmd BufWritePre * if &binary | Vinarise | endif
-    autocmd BufWritePost * if &binary | Vinarise
-  augroup END
-'''
-
-[[plugins]]
 repo = 'airblade/vim-gitgutter'
 
 [[plugins]]
@@ -100,5 +118,19 @@ repo = 'vim-scripts/AnsiEsc.vim'
 [[plugins]]
 repo = 'numirias/semshi'
 
+# pandoc markdown
 [[plugins]]
-repo = 'editorconfig/editorconfig-vim'
+repo      = 'vim-pandoc/vim-pandoc'
+hook_add  = 'source ~/.config/nvim/plugins/plugin-vim-pandoc.vim'
+
+[[plugins]]
+repo      = 'vim-pandoc/vim-pandoc-syntax'
+
+# ime
+[[plugins]]
+repo = 'tyru/eskk.vim'
+hook_add = 'source ~/.config/nvim/plugins/plugin-eskk.vim'
+
+# english words dictionary
+[[plugins]]
+repo = 'koron/codic-vim'
