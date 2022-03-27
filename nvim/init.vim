@@ -1,10 +1,3 @@
-" vimrc
-
-if &compatible
-  set nocompatible
-endif
-
-
 source ~/.config/nvim/settings.vim
 source ~/.config/nvim/filetype.vim
 
