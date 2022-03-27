@@ -5,9 +5,6 @@ repo = 'Shougo/dein.vim'
 repo = 'wsdjeg/dein-ui.vim'
 
 [[plugins]]
-repo = 'vim-denops/denops.vim'
-
-[[plugins]]
 repo = 'airblade/vim-rooter'
 
 [[plugins]]
@@ -15,15 +12,7 @@ repo = 'Shougo/vimproc.vim'
 build = 'make'
 
 [[plugins]]
-repo = 'junegunn/fzf'
-build = './install --all'
-
-[[plugins]]
-repo = 'yuki-yano/fzf-preview.vim'
-rev = 'release/remote'
-hook_add = '''
-  source ~/.config/nvim/plugin/fzf-preview.vim
-'''
+repo = 'vim-denops/denops.vim'
 
 [[plugins]]
 repo = 'mhinz/vim-startify'
@@ -60,24 +49,6 @@ repo = 'tpope/vim-surround'
 
 [[plugins]]
 repo = 'tpope/vim-repeat'
-
-[[plugins]]
-repo = 'mattn/sonictemplate-vim'
-hook_add = '''
-  let g:sonictemplate_vim_template_dir = expand('~/.config/nvim/sonictemplate')
-'''
-
-[[plugins]]
-repo = 'SirVer/ultisnips'
-hook_add = '''
-  let g:UltiSnipsExpandTrigger="<s-tab>"
-  let g:UltiSnipsJumpForwardTrigger="<c-b>"
-  let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-  let g:UltiSnipsEditSplit="vertical"
-'''
-
-[[plugins]]
-repo = 'honza/vim-snippets'
 
 [[plugins]]
 repo = 'terryma/vim-expand-region'
