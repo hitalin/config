@@ -110,8 +110,8 @@ set noswapfile
 "}}}
 
 " Leave insert mode and turn off Japanese input {{{
-autocmd InsertLeave * :call system('${zenhan} 0')
-autocmd CmdlineLeave * :call system('${zenhan} 0')
+"autocmd InsertLeave * :call system('${zenhan} 0')
+"autocmd CmdlineLeave * :call system('${zenhan} 0')
 "}}}
 
 " Encoding {{{
