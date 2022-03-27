@@ -1,13 +1,13 @@
-source ~/.config/nvim/settings.vim
-source ~/.config/nvim/filetype.vim
+source ~/.config/nvim/rc/settings.vim
+source ~/.config/nvim/rc/filetype.vim
 
 " Dein {{{
 let s:dein_dir = expand('~/.cache/nvim/dein')
 let s:dein_github = s:dein_dir . '/repos/github.com'
 let s:dein_repo_name = 'Shougo/dein.vim'
 let s:dein_repo_dir = s:dein_github . '/' . s:dein_repo_name
-let s:dein_toml = '~/.config/nvim/dein.toml'
-let s:dein_lazy_toml = '~/.config/nvim/dein_lazy.toml'
+let s:dein_toml = '~/.config/nvim/rc/dein.toml'
+let s:dein_lazy_toml = '~/.config/nvim/rc/dein_lazy.toml'
 
 "  Install dein automatically
 if !isdirectory(s:dein_repo_dir)
@@ -28,8 +28,8 @@ if dein#load_state(s:dein_dir)
 endif
 " }}}
 
-source ~/.config/nvim/indent/indent.vim
-source ~/.config/nvim/colors/colors.vim
+source ~/.config/nvim/rc/indent.vim
+source ~/.config/nvim/rc/colors.vim
 
 if has('vim_starting') && dein#check_install()
   call dein#install()
