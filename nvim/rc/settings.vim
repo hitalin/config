@@ -1,28 +1,28 @@
-" Set statusline {{{2
+" Set statusline {{{
 set laststatus=2
 "}}}
 
-" Display line number {{{2
+" Display line number {{{
 set nu
 "}}}
 
-" Display ruler {{{2
+" Display ruler {{{
 set ruler
 "}}}
 
-" Highlight a matching opening or closing parenthesis, square bracket or a curly brace {{{2
+" Highlight a matching opening or closing parenthesis, square bracket or a curly brace {{{
 set showmatch
 "}}}
 
-" Enable incsearch {{{2
+" Enable incsearch {{{
 set incsearch
 "}}}
 
-" Switch on highlighting the last used search pattern {{{2
+" Switch on highlighting the last used search pattern {{{
 set hlsearch
 "}}}
 
-" Clipboard {{{2
+" Clipboard {{{
 " Accessing the system clipboard
 set clipboard&
 set clipboard=unnamedplus
@@ -47,7 +47,7 @@ if has('mouse')
 endif
 "}}}
 
-" GUI configuration {{{2
+" GUI configuration {{{
 hi Visual cterm=reverse
 hi Search cterm=reverse ctermfg=yellow
 hi VertSplit ctermbg=NONE guibg=NONE
@@ -61,21 +61,21 @@ if !has('gui_running')
 endif
 "}}}
 
-" Fastest way to move buffer {{{2
+" Fastest way to move buffer {{{
 nnoremap <silent><Left> :bp<CR>
 nnoremap <silent><Right> :bn<CR>
 nnoremap <silent><C-Space> :call BufferDeleteExceptFiler()<CR>
 "}}}
 
-" Display another buffer when current buffer isn't saved. {{{2
+" Display another buffer when current buffer isn't saved. {{{
 set hidden
 "}}}
 
-" Do not create swap files {{{2
+" Do not create swap files {{{
 set noswapfile
 "}}}
 
-" Spell configuration {{{2
+" Spell configuration {{{
 "autocmd BufRead,BufNewFile *.md  set spelllang=en_us,cjk spell
 "autocmd BufRead,BufNewFile *.tex set spelllang=en_us,cjk spell
 "hi clear SpellBad
@@ -86,7 +86,7 @@ set noswapfile
 "hi SpellLocal cterm=underline ctermfg=LightBlue
 "}}}
 
-" Comfortable Japanese input {{{2
+" Comfortable Japanese input {{{
 "" https://qiita.com/ssh0/items/9e7f0d8b8f033183dd0b
 "imap <C-j> <Down>
 "imap <C-k> <Up>
@@ -109,17 +109,17 @@ set noswapfile
 "nnoremap ・ /
 "}}}
 
-" Leave insert mode and turn off Japanese input {{{2
+" Leave insert mode and turn off Japanese input {{{
 autocmd InsertLeave * :call system('${zenhan} 0')
 autocmd CmdlineLeave * :call system('${zenhan} 0')
 "}}}
 
-" Encoding {{{2
+" Encoding {{{
 set encoding=UTF-8
 scriptencoding=UTF-8
 "}}}
 
-" Tab {{{2
+" Tab {{{
 set wildmenu
 set wildmode=full
 
@@ -127,7 +127,7 @@ set expandtab
 set smarttab
 "}}}
 
-" Leader {{{2
+" Leader {{{
 let mapleader = "\<Space>"
 let localleader = "\<Space>"
 
@@ -136,7 +136,7 @@ nnoremap <leader>q :q<cr>
 nnoremap <leader>r :source ~/.vimrc<cr>
 "}}}
 
-" Undo {{{2
+" Undo {{{
 if has('persistent_undo')
   set undodir=~/.vim/undo
   set undofile
