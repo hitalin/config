@@ -20,7 +20,7 @@ repo = 'mhinz/vim-startify'
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = '''
-  source ~/.config/nvim/plugin/lightline.vim
+  source ~/.config/nvim/plugins/plugin-lightline.vim
 '''
 
 [[plugins]]
@@ -32,7 +32,7 @@ hook_add = '''
 [[plugins]]
 repo = 'liuchengxu/vista.vim'
 hook_add = '''
-  source ~/.config/nvim/plugin/vista.vim
+  source ~/.config/nvim/plugins/plugin-vista.vim
 '''
 
 [[plugins]]

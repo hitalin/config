@@ -64,7 +64,7 @@ depends     = ['lspkind-nvim', 'lsp_signature.nvim', 'nvim-lsp-installer', 'lsps
 #repo        = 'simrat39/rust-tools.nvim'
 #depends     = 'nvim-lspconfig'
 #on_ft       = 'rust'
-#hook_source = 'luafile ~/.vim/rc/plugins/lua/plugin-rust-tools.lua'
+#hook_source = 'luafile ~/.config/nvim/plugins/lua/plugin-rust-tools.lua'
 #
 [[plugins]]
 repo        = 'ray-x/lsp_signature.nvim'
@@ -140,7 +140,7 @@ hook_add = '''
 [[plugins]]
 repo = 'lervag/vimtex'
 hook_add = '''
-  source ~/.config/nvim/plugin/vimtex.vim
+  source ~/.config/nvim/plugins/plugin-vimtex.vim
 '''
 
 [[plugins]]
@@ -172,5 +172,5 @@ repo = 'kristijanhusak/defx-git'
 
 [plugins.ftplugin]
 defx= '''
-  source ~/.config/nvim/plugin/defx.vim
+  source ~/.config/nvim/plugins/plugin-defx.vim
 '''
