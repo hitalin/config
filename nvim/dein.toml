@@ -5,6 +5,9 @@ repo = 'Shougo/dein.vim'
 repo = 'wsdjeg/dein-ui.vim'
 
 [[plugins]]
+repo = 'vim-denops/denops.vim'
+
+[[plugins]]
 repo = 'airblade/vim-rooter'
 
 [[plugins]]
