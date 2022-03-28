@@ -64,12 +64,12 @@ on_event    = 'BufEnter'
 depends     = ['lspkind-nvim', 'lsp_signature.nvim', 'nvim-lsp-installer', 'lspsaga.nvim']
 hook_source = 'luafile ~/.config/nvim/plugins/lua/plugin-nvim-lsp.lua'
 
-#[[plugins]]
-#repo        = 'simrat39/rust-tools.nvim'
-#depends     = 'nvim-lspconfig'
-#on_ft       = 'rust'
-#hook_source = 'luafile ~/.config/nvim/plugins/lua/plugin-rust-tools.lua'
-#
+[[plugins]]
+repo        = 'simrat39/rust-tools.nvim'
+depends     = 'nvim-lspconfig'
+on_ft       = 'rust'
+hook_source = 'luafile ~/.config/nvim/plugins/lua/plugin-rust-tools.lua'
+
 [[plugins]]
 repo        = 'ray-x/lsp_signature.nvim'
 on_source   = 'nvim-lspconfig'
