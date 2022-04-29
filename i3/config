@@ -122,6 +122,10 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+# https://qiita.com/gyu-don/items/d61b03e0222a7f1ce9f7#%E5%93%80%E3%82%8C%E3%81%AAwindows%E3%83%A6%E3%83%BC%E3%82%B6%E3%81%AE%E3%81%9F%E3%82%81%E3%81%ABaltf4%E3%81%A7%E3%82%A6%E3%82%A3%E3%83%B3%E3%83%89%E3%82%A6%E3%82%92%E9%96%89%E3%81%98%E3%82%8B%E3%82%88%E3%81%86%E3%83%90%E3%82%A4%E3%83%B3%E3%83%89=
+bindsym $mod+Prior workspace prev
+bindsym $mod+Next workspace next
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
