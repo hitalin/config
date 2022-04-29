@@ -1,7 +1,7 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
+# Mod4 is Super in Linux and Windows key in Windows.
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
