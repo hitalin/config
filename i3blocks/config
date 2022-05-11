@@ -156,20 +156,20 @@ signal=10
 #signal=11
 
 # i3blocks-contrib
-[arch-update]
-interval=3600
-markup=pango
-LABEL=Pacman:
+#[arch-update]
+#interval=3600
+#markup=pango
+#LABEL=Pacman:
 
 # i3blocks-contrib
-[aur-update]
-markup=pango
-format=json
-interval=43200
-UPDATE_COLOR=red
-QUIET=1
-IGNORE=root vidyodesktop
-CACHE_UPDATES=0
+#[aur-update]
+#markup=pango
+#format=json
+#interval=43200
+#UPDATE_COLOR=red
+#QUIET=1
+#IGNORE=root vidyodesktop
+#CACHE_UPDATES=0
 
 # i3blocks-contrib
 [dunst]
