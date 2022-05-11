@@ -81,9 +81,9 @@ label=wifi:
 interval=10
 separator=false
 
-[bandwidth]
-INTERFACE=eth0
-interval=5
+#[bandwidth]
+#INTERFACE=eth0
+#interval=5
 
 # CPU usage
 #
