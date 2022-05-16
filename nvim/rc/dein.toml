@@ -38,9 +38,6 @@ hook_add = '''
 repo = 'editorconfig/editorconfig-vim'
 
 [[plugins]]
-repo = 'mhinz/vim-startify'
-
-[[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = '''
   source ~/.config/nvim/plugins/plugin-lightline.vim
