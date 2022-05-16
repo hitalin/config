@@ -38,6 +38,14 @@ hook_add = '''
 repo = 'editorconfig/editorconfig-vim'
 
 [[plugins]]
+repo = 'goolord/alpha-nvim'
+hook_add = '''
+  source ~/.config/nvim/plugins/lua/plugin-alpha.lua
+'''
+[[plugins]]
+repo = 'kyazdani42/nvim-web-devicons'
+
+[[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = '''
   source ~/.config/nvim/plugins/plugin-lightline.vim
