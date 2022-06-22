@@ -178,9 +178,6 @@ hook_add    = 'source ~/.config/nvim/plugins/plugin-vim-gista.vim'
 repo        = 'shiracamus/vim-syntax-x86-objdump-d'
 on_ft       = ['asm']
 
-#[[plugins]]
-#repo = 'github/copilot.vim'
-
 [[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
 hook_add = '''
