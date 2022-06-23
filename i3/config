@@ -193,7 +193,7 @@ bar {
 
 }
 # https://github.com/adi1090x/polybar-themes
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh --panels
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh --panels
 
 # for only i3-gaps
 gaps outer 2
