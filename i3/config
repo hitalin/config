@@ -176,6 +176,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command SCRIPT_DIR=$HOME/.config/i3blocks i3blocks
+        i3bar_command i3bar --transparency
         position bottom
         font pango:IBM Plex Sans 10
 # https://thomashunter.name/i3-configurator/
