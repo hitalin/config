@@ -1,6 +1,6 @@
 EXCLUDE_FILES  = .git .gitmodules .gitignore
 INSTALL_TARGET = $(wildcard .??*)
-XDG_CONFIGS	   = mpv
+XDG_CONFIGS	   = mpv i3
 
 CONFIG_DIR     = $(HOME)/.config
 NVIM_PATH      = $(CONFIG_DIR)/nvim
