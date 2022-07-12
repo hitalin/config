@@ -1,6 +1,6 @@
 EXCLUDE_FILES  = .git .gitmodules .gitignore
 INSTALL_TARGET = $(wildcard .??*)
-XDG_CONFIGS	   = mpv i3
+XDG_CONFIGS	   = alacritty dunst sway i3 i3blocks i3lock-color picom rofi fcitx5 zathura mpd ncmpcpp cmus ranger mpv pandoc
 
 CONFIG_DIR     = $(HOME)/.config
 NVIM_PATH      = $(CONFIG_DIR)/nvim
