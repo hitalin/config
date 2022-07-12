@@ -19,6 +19,5 @@ deploy: init
 init: $(CONFIG_DIR) $(NVIM_PATH)
 
 uninstall:
-	@unlink $(INIT_VIM_PATH)
 	@unlink $(NVIM_PATH)
 	@$(foreach val, $(XDG_CONFIGS), unlink $(CONFIG_DIR)/$(val);)
