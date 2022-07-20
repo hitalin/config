@@ -173,6 +173,10 @@ repo        = 'lambdalisue/vim-gista'
 #on_cmd      = 'Gista'
 hook_add    = 'source ~/.config/nvim/plugins/plugin-vim-gista.vim'
 
+# wakatime
+[[plugins]]
+repo        = 'wakatime/vim-wakatime'
+
 # asm
 [[plugins]]
 repo        = 'shiracamus/vim-syntax-x86-objdump-d'
