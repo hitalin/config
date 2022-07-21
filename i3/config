@@ -33,7 +33,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- sh $HOME/config/i3lock-co
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return  exec --no-startup-id alacritty
 
 # start rofi (a program launcher)
 bindsym $mod+d exec --no-startup-id "rofi -combi-modi drun,run -show combi"
