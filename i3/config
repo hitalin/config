@@ -89,6 +89,10 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+# Show/Hide the keepassxc window
+bindsym $mod+Shift+p [instance="keepassxc"] scratchpad show, move position center
+for_window [instance="keepassxc"] floating enable, resize set 1200 600, move scratchpad, border pixel 1
+
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
