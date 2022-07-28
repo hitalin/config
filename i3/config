@@ -228,4 +228,3 @@ exec --no-startup-id greenclip daemon
 exec --no-startup-id keepassxc
 exec --no-startup-id superproductivity
 exec --no-startup-id pomodoneapp
-exec --no-startup-id clockify
