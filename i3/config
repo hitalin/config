@@ -224,8 +224,9 @@ exec --no-startup-id blueman-tray
 exec --no-startup-id fcitx5
 exec --no-startup-id dunst
 exec --no-startup-id greenclip daemon
-exec --no-startup-id dex -a
 exec --no-startup-id keepassxc
-#exec --no-startup-id rescuetime
-#exec --no-startup-id superproductivity
-#exec --no-startup-id pomodoneapp
+exec --no-startup-id dropbox
+exec --no-startup-id rescuetime
+exec --no-startup-id superproductivity
+exec --no-startup-id pomodoneapp
+exec --no-startup-id dex -a
