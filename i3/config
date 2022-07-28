@@ -217,6 +217,7 @@ for_window [class="^.*"] border pixel 1
 #new_window 1pixel
 
 # startup
+## CUI apps
 exec --no-startup-id sh $HOME/config/feh/fehbg
 exec --no-startup-id picom -b --config $HOME/config/picom/picom.conf
 exec --no-startup-id udiskie --tray
@@ -224,9 +225,11 @@ exec --no-startup-id blueman-tray
 exec --no-startup-id fcitx5
 exec --no-startup-id dunst
 exec --no-startup-id greenclip daemon
+## GUI apps
 exec --no-startup-id keepassxc
 exec --no-startup-id dropbox
 exec --no-startup-id rescuetime
 exec --no-startup-id superproductivity
 exec --no-startup-id pomodoneapp
-exec --no-startup-id dex -a
+exec --no-startup-id dex -v $HOME/.config/autostart/keybase_autostart.desktop
+exec --no-startup-id dex -v $HOME/.config/autostart/userapp-Telegram Desktop-DPJBQ1.desktop
