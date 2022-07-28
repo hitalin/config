@@ -220,7 +220,7 @@ for_window [class="^.*"] border pixel 1
 exec --no-startup-id sh $HOME/config/feh/fehbg
 exec --no-startup-id picom -b --config $HOME/config/picom/picom.conf
 exec --no-startup-id udiskie --tray
-#exec --no-startup-id blueman-tray
+exec --no-startup-id blueman-tray
 exec --no-startup-id fcitx5
 exec --no-startup-id dunst
 exec --no-startup-id dropbox
