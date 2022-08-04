@@ -236,7 +236,9 @@ exec --no-startup-id pomodoneapp
 for_window [class="PomoDoneApp"] move to workspace $ws2
 exec --no-startup-id dex -v $HOME/.config/autostart/TogglDesktop.desktop
 for_window [class="Toggl Desktop"] move to workspace $ws2
-#exec --no-startup-id dex -v $HOME/.config/autostart/keybase_autostart.desktop
-#for_window [class="Keybase"] move to workspace $ws3
+exec --no-startup-id dex -v $HOME/.config/autostart/TelegramDesktop.desktop
+for_window [class="Vivaldi-stable"] move to workspace $ws3
+exec --no-startup-id dex -v $HOME/.config/autostart/vivaldi-stable.desktop
+#for_window [class="Keybase"] move to workspace $ws4
 #exec --no-startup-id dex -v $HOME/.config/autostart/TelegramDesktop.desktop
-#for_window [class="TelegramDesktop"] move to workspace $ws3
+#for_window [class="TelegramDesktop"] move to workspace $ws4
