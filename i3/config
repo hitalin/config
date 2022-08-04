@@ -217,8 +217,7 @@ for_window [class="^.*"] border pixel 1
 #new_window 1pixel
 
 # startup
-## CUI apps
-exec --no-startup-id alacritty
+## GUI apps in tray
 exec --no-startup-id sh $HOME/config/feh/fehbg
 exec --no-startup-id picom -b --config $HOME/config/picom/picom.conf
 exec --no-startup-id udiskie --tray
@@ -226,19 +225,23 @@ exec --no-startup-id blueman-tray
 exec --no-startup-id fcitx5
 exec --no-startup-id dunst
 exec --no-startup-id greenclip daemon
-## GUI apps
 exec --no-startup-id keepassxc
 exec --no-startup-id dropbox
 exec --no-startup-id rescuetime
+## GUI apps in workspaces
+exec --no-startup-id alacritty
+
 exec --no-startup-id superproductivity
 for_window [class="superProductivity"] move to workspace $ws2
 exec --no-startup-id pomodoneapp
 for_window [class="PomoDoneApp"] move to workspace $ws2
 exec --no-startup-id dex -v $HOME/.config/autostart/TogglDesktop.desktop
 for_window [class="Toggl Desktop"] move to workspace $ws2
-exec --no-startup-id dex -v $HOME/.config/autostart/TelegramDesktop.desktop
-for_window [class="Vivaldi-stable"] move to workspace $ws3
+
 exec --no-startup-id dex -v $HOME/.config/autostart/vivaldi-stable.desktop
+for_window [class="Vivaldi-stable"] move to workspace $ws3
+
+#exec --no-startup-id dex -v $HOME/.config/autostart/keybase_autostart.desktop
 #for_window [class="Keybase"] move to workspace $ws4
 #exec --no-startup-id dex -v $HOME/.config/autostart/TelegramDesktop.desktop
 #for_window [class="TelegramDesktop"] move to workspace $ws4
