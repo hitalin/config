@@ -87,11 +87,13 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+minus move scratchpad
 
 # Show the first scratchpad window
-bindsym $mod+minus scratchpad show
+bindsym $mod+minus scratchpad show, move position center
 
 # Show/Hide the keepassxc window
 bindsym $mod+Shift+p [instance="keepassxc"] scratchpad show, move position center
-for_window [instance="keepassxc"] floating enable, resize set 1200 600, move scratchpad, border pixel 1
+for_window [instance="keepassxc"] floating enable, move scratchpad, border pixel 1
+bindsym $mod+Shift+o [instance="authy"] scratchpad show, move position center
+for_window [instance="authy"] floating enable, move scratchpad, border pixel 1
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -225,9 +227,12 @@ exec --no-startup-id blueman-tray
 exec --no-startup-id fcitx5
 exec --no-startup-id dunst
 exec --no-startup-id greenclip daemon
-exec --no-startup-id keepassxc
 exec --no-startup-id dropbox
 exec --no-startup-id rescuetime
+## GUI apps in scratchpad
+exec --no-startup-id keepassxc
+exec --no-startup-id authy
+
 ## GUI apps in workspaces
 exec --no-startup-id alacritty
 
