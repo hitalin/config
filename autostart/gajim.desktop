@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/usr/bin/gajim
+Name=gajim
+Comment=A fully-featured XMPP chat client
+Type=Application

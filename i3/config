@@ -246,6 +246,8 @@ for_window [class="Vivaldi-stable"] move to workspace $ws3
 #exec --no-startup-id dex -v $HOME/.config/autostart/TelegramDesktop.desktop
 #for_window [class="TelegramDesktop"] move to workspace $ws4
 
+#exec --no-startup-id dex -v $HOME/.config/autostart/gajim.desktop
+#for_window [class="Gajim"] move to workspace $ws5
 #exec --no-startup-id dex -v $HOME/.config/autostart/nheko.desktop
 #for_window [class="nheko"] move to workspace $ws5
 
