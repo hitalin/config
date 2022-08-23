@@ -229,7 +229,7 @@ exec --no-startup-id dunst
 exec --no-startup-id greenclip daemon
 exec --no-startup-id dropbox
 exec --no-startup-id rescuetime
-exec --no-startup-id appimagelauncherd
+#exec --no-startup-id appimagelauncherd
 ## GUI apps in scratchpad
 exec --no-startup-id keepassxc
 exec --no-startup-id authy
