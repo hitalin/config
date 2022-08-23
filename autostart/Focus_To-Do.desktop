@@ -1,0 +1,4 @@
+[Desktop Entry]
+Exec=/usr/bin/brave --profile-directory=Default --app=chrome-extension://ngceodoilcgpmkijopinlkmohnfifjfb/WebContent/index.html#popout
+Name=FocusToDo
+Type=Application
