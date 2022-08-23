@@ -262,3 +262,6 @@ for_window [class="Vivaldi-stable"] move to workspace $ws3
 
 #exec --no-startup-id dex -v $HOME/.config/autostart/slack.desktop
 #for_window [class="Slack"] move to workspace $ws7
+
+#exec --no-startup-id dex -v $HOME/.config/autostart/LINE.desktop
+#for_window [class="Brave-browser"] move to workspace $ws8

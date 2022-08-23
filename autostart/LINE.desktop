@@ -1,0 +1,4 @@
+[Desktop Entry]
+Exec=/usr/bin/brave --profile-directory=Default --app=chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html#popout
+Name=line
+Type=Application
