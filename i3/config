@@ -236,6 +236,7 @@ exec --no-startup-id authy
 
 ## GUI apps in workspaces
 exec --no-startup-id alacritty
+for_window [class="Alacritty"] move to workspace $ws1
 
 exec --no-startup-id superproductivity
 for_window [class="superProductivity"] move to workspace $ws2
