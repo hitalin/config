@@ -240,8 +240,6 @@ for_window [class="Alacritty"] move to workspace $ws1
 
 exec --no-startup-id superproductivity
 for_window [class="superProductivity"] move to workspace $ws2
-#exec --no-startup-id dex -v $HOME/.config/autostart/appimagekit_95958a6fe5fc6699c47e9e75e00a7ab4-Paymo_Widget.desktop
-#for_window [class="Paymo Widget"] move to workspace $ws2
 
 #exec --no-startup-id pomodoneapp
 #for_window [class="PomoDoneApp"] move to workspace $ws3
