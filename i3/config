@@ -240,11 +240,11 @@ for_window [class="Alacritty"] move to workspace $ws1
 
 exec --no-startup-id superproductivity
 for_window [class="superProductivity"] move to workspace $ws2
-exec --no-startup-id dex -v $HOME/.config/autostart/appimagekit_95958a6fe5fc6699c47e9e75e00a7ab4-Paymo_Widget.desktop
-for_window [class="Paymo Widget"] move to workspace $ws2
+#exec --no-startup-id dex -v $HOME/.config/autostart/appimagekit_95958a6fe5fc6699c47e9e75e00a7ab4-Paymo_Widget.desktop
+#for_window [class="Paymo Widget"] move to workspace $ws2
 
-exec --no-startup-id pomodoneapp
-for_window [class="PomoDoneApp"] move to workspace $ws3
+#exec --no-startup-id pomodoneapp
+#for_window [class="PomoDoneApp"] move to workspace $ws3
 exec --no-startup-id dex -v $HOME/.config/autostart/TogglDesktop.desktop
 for_window [class="Toggl Desktop"] move to workspace $ws3
 
@@ -255,11 +255,11 @@ exec --no-startup-id dex -v $HOME/.config/autostart/Focus_To-Do.desktop
 #exec --no-startup-id dex -v $HOME/.config/autostart/LINE.desktop
 for_window [class="Brave-browser"] move to workspace $ws5
 
-exec --no-startup-id dex -v $HOME/.config/autostart/discord.desktop
-for_window [class="discord"] move to workspace $ws6
+#exec --no-startup-id dex -v $HOME/.config/autostart/discord.desktop
+#for_window [class="discord"] move to workspace $ws6
 
-exec --no-startup-id dex -v $HOME/.config/autostart/slack.desktop
-for_window [class="Slack"] move to workspace $ws7
+#exec --no-startup-id dex -v $HOME/.config/autostart/slack.desktop
+#for_window [class="Slack"] move to workspace $ws7
 
 #exec --no-startup-id dex -v $HOME/.config/autostart/keybase_autostart.desktop
 #for_window [class="Keybase"] move to workspace $ws8
