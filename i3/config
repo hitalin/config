@@ -90,8 +90,10 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show, move position center
 
 # Show/Hide the keepassxc window
+# Don't duplicate this setting to [GUI] in ~/.config/keepassxc/keepassxc.ini
 bindsym $mod+Shift+p [instance="keepassxc"] scratchpad show, move position center
 for_window [instance="keepassxc"] floating enable, move scratchpad, border pixel 1
+# Show/Hide the Authy Desktop window
 bindsym $mod+Shift+o [instance="authy"] scratchpad show, move position center
 for_window [instance="authy"] floating enable, move scratchpad, border pixel 1
 
