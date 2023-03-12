@@ -236,6 +236,9 @@ exec --no-startup-id rescuetime
 exec --no-startup-id keepassxc
 exec --no-startup-id authy
 
+## GUI app
+exec --no-startup-id tilda
+
 ## GUI apps in workspaces
 exec --no-startup-id alacritty
 for_window [class="Alacritty"] move to workspace $ws1
