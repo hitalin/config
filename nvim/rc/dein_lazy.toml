@@ -1,177 +1,218 @@
 # Complete/Language Server Protocol
 [[plugins]]
-repo        = 'Shougo/ddc.vim'
-on_event    = 'InsertEnter'
-depends     = ['context_filetype.vim', 'pum.vim', 'vim-vsnip']
+repo = 'Shougo/ddc.vim'
+on_event = 'InsertEnter'
+depends = ['context_filetype.vim', 'pum.vim', 'vim-vsnip']
 hook_source = 'source ~/.config/nvim/plugins/plugin-ddc.vim'
 
 [[plugins]]
-repo        = 'Shougo/ddc-matcher_head'
-on_source   = 'ddc.vim'
+repo = 'Shougo/ddc-matcher_head'
+on_source = 'ddc.vim'
 
 [[plugins]]
-repo        = 'Shougo/pum.vim'
-on_source   = 'ddc.vim'
+repo = 'Shougo/pum.vim'
+on_source = 'ddc.vim'
 
 [[plugins]]
-repo        = 'Shougo/ddc-around'
-on_source   = 'ddc.vim'
+repo = 'Shougo/ddc-around'
+on_source = 'ddc.vim'
 
 [[plugins]]
-repo        = 'Shougo/ddc-converter_remove_overlap'
-on_source   = 'ddc.vim'
+repo = 'Shougo/ddc-converter_remove_overlap'
+on_source = 'ddc.vim'
 
 [[plugins]]
-repo        = 'Shougo/ddc-sorter_rank'
-on_source   = 'ddc.vim'
+repo = 'Shougo/ddc-sorter_rank'
+on_source = 'ddc.vim'
 
 [[plugins]]
-repo        = 'Shougo/ddc-nvim-lsp'
-on_source   = 'ddc.vim'
+repo = 'Shougo/ddc-nvim-lsp'
+on_source = 'ddc.vim'
 
 [[plugins]]
-repo        = 'LumaKernel/ddc-file'
-on_source   = 'ddc.vim'
+repo = 'LumaKernel/ddc-file'
+on_source = 'ddc.vim'
 
 [[plugins]]
-repo        = 'matsui54/ddc-dictionary'
-on_source   = 'ddc.vim'
+repo = 'matsui54/ddc-dictionary'
+on_source = 'ddc.vim'
 
 [[plugins]]
-repo        = 'matsui54/ddc-filter_editdistance'
-on_source   = 'ddc.vim'
+repo = 'matsui54/ddc-filter_editdistance'
+on_source = 'ddc.vim'
 
 # Text snippet
 [[plugins]]
-repo        = 'hrsh7th/vim-vsnip'
-on_event    = 'InsertEnter'
-depends     = ['vim-vsnip-integ', 'friendly-snippets']
-hook_add    = 'source ~/.config/nvim/plugins/plugin-vim-vsnip.vim'
+repo = 'hrsh7th/vim-vsnip'
+on_event = 'InsertEnter'
+depends = ['vim-vsnip-integ', 'friendly-snippets']
+hook_add = 'source ~/.config/nvim/plugins/plugin-vim-vsnip.vim'
 
 
 [[plugins]]
-repo        = 'hrsh7th/vim-vsnip-integ'
-on_source   = 'vim-vsnip'
+repo = 'hrsh7th/vim-vsnip-integ'
+on_source = 'vim-vsnip'
 
 [[plugins]]
-repo        = 'rafamadriz/friendly-snippets'
-on_source   = 'vim-vsnip'
+repo = 'rafamadriz/friendly-snippets'
+on_source = 'vim-vsnip'
 
 # Neovim builtin LSP server
 [[plugins]]
-repo        = 'neovim/nvim-lspconfig'
-on_event    = 'BufEnter'
-depends     = ['lspkind-nvim', 'lsp_signature.nvim', 'nvim-lsp-installer', 'lspsaga.nvim']
+repo = 'neovim/nvim-lspconfig'
+on_event = 'BufEnter'
+depends = [
+  'lspkind-nvim',
+  'lsp_signature.nvim',
+  'nvim-lsp-installer',
+  'lspsaga.nvim',
+]
 hook_source = 'luafile ~/.config/nvim/plugins/lua/plugin-nvim-lsp.lua'
 
 [[plugins]]
-repo        = 'simrat39/rust-tools.nvim'
-depends     = 'nvim-lspconfig'
-on_ft       = 'rust'
+repo = 'simrat39/rust-tools.nvim'
+depends = 'nvim-lspconfig'
+on_ft = 'rust'
 hook_source = 'luafile ~/.config/nvim/plugins/lua/plugin-rust-tools.lua'
 
 [[plugins]]
-repo        = 'ray-x/lsp_signature.nvim'
-on_source   = 'nvim-lspconfig'
+repo = 'ray-x/lsp_signature.nvim'
+on_source = 'nvim-lspconfig'
 
 [[plugins]]
-repo        = 'onsails/lspkind-nvim'
-on_source   = 'nvim-lspconfig'
+repo = 'onsails/lspkind-nvim'
+on_source = 'nvim-lspconfig'
 
 [[plugins]]
-repo        = 'tami5/lspsaga.nvim'
-on_source   = 'nvim-lspconfig'
+repo = 'tami5/lspsaga.nvim'
+on_source = 'nvim-lspconfig'
 
 [[plugins]]
-repo        = 'folke/trouble.nvim'
-on_source   = 'nvim-lspconfig'
-depends     = 'nvim-web-devicons'
+repo = 'folke/trouble.nvim'
+on_source = 'nvim-lspconfig'
+depends = 'nvim-web-devicons'
 hook_source = 'luafile ~/.config/nvim/plugins/lua/plugin-trouble.lua'
 
 [[plugins]]
-repo        = 'kyazdani42/nvim-web-devicons'
-on_source   = 'nvim-lspconfig'
+repo = 'kyazdani42/nvim-web-devicons'
+on_source = 'nvim-lspconfig'
 
 [[plugins]]
-repo        = 'williamboman/nvim-lsp-installer'
-on_source   = 'nvim-lspconfig'
+repo = 'williamboman/nvim-lsp-installer'
+on_source = 'nvim-lspconfig'
 
 [[plugins]]
-repo        = 'matsui54/denops-popup-preview.vim'
-on_source   = 'nvim-lspconfig'
-depends     = ['nvim-lsp-installer', 'pum.vim']
+repo = 'matsui54/denops-popup-preview.vim'
+on_source = 'nvim-lspconfig'
+depends = ['nvim-lsp-installer', 'pum.vim']
 hook_source = 'source ~/.config/nvim/plugins/plugin-denops-popup-preview.vim'
 
 [[plugins]]
-repo        = 'nvim-lua/plenary.nvim'
-on_event    = 'BufEnter'
+repo = 'nvim-lua/plenary.nvim'
+on_event = 'BufEnter'
 
 [[plugins]]
-repo        = 'nvim-lua/popup.nvim'
-depends     = 'plenary.nvim'
-on_source   = 'plenary.nvim'
+repo = 'nvim-lua/popup.nvim'
+depends = 'plenary.nvim'
+on_source = 'plenary.nvim'
 
 [[plugins]]
-repo        = 'nvim-telescope/telescope.nvim'
-depends     = 'plenary.nvim'
-on_source   = 'plenary.nvim'
+repo = 'nvim-telescope/telescope.nvim'
+depends = 'plenary.nvim'
+on_source = 'plenary.nvim'
 
 # color scheme with tree-sitter
 [[plugins]]
-repo             = 'nvim-treesitter/nvim-treesitter'
-on_event         = 'BufEnter'
-hook_source      = 'luafile ~/.config/nvim/plugins/lua/plugin-treesitter.lua'
-depends          = 'nvim-ts-rainbow'
+repo = 'nvim-treesitter/nvim-treesitter'
+on_event = 'BufEnter'
+hook_source = 'luafile ~/.config/nvim/plugins/lua/plugin-treesitter.lua'
+depends = 'nvim-ts-rainbow'
 hook_post_update = 'TSUpdate'
 
 [[plugins]]
-repo      = 'p00f/nvim-ts-rainbow'
+repo = 'p00f/nvim-ts-rainbow'
 on_source = 'nvim-treesitter'
 
 # indent
 [[plugins]]
-repo         = 'lukas-reineke/indent-blankline.nvim'
-on_event     = 'BufEnter'
-depends      = 'nvim-ts-rainbow'
-hook_source  = 'luafile ~/.config/nvim/plugins/lua/plugin-indent-blankline.lua'
+repo = 'lukas-reineke/indent-blankline.nvim'
+on_event = 'BufEnter'
+depends = 'nvim-ts-rainbow'
+hook_source = 'luafile ~/.config/nvim/plugins/lua/plugin-indent-blankline.lua'
 
 # grammer checker ( need Java runtime for LanguageTool )
 [[plugins]]
-repo       = 'rhysd/vim-grammarous'
-on_ft      = ['rst', 'markdown', 'asciidoc', 'pandoc', 'gitrebase', 'gitcommit', 'vcs-commit', 'hybrid', 'text', 'help', 'tex']
+repo = 'rhysd/vim-grammarous'
+on_ft = [
+  'rst',
+  'markdown',
+  'asciidoc',
+  'pandoc',
+  'gitrebase',
+  'gitcommit',
+  'vcs-commit',
+  'hybrid',
+  'text',
+  'help',
+  'tex',
+]
 
 # translation
 [[plugins]]
-repo       = 'daisuzu/translategoogle.vim'
-on_ft      = ['rst', 'markdown', 'asciidoc', 'pandoc', 'gitrebase', 'gitcommit', 'vcs-commit', 'hybrid', 'text', 'help', 'tex']
-hook_add   = 'source ~/.config/nvim/plugins/plugin-translategoogle.vim'
+repo = 'daisuzu/translategoogle.vim'
+on_ft = [
+  'rst',
+  'markdown',
+  'asciidoc',
+  'pandoc',
+  'gitrebase',
+  'gitcommit',
+  'vcs-commit',
+  'hybrid',
+  'text',
+  'help',
+  'tex',
+]
+hook_add = 'source ~/.config/nvim/plugins/plugin-translategoogle.vim'
 
 # writing table in plain text
 [[plugins]]
-repo       = 'dhruvasagar/vim-table-mode'
-on_ft      = ['rst', 'markdown', 'asciidoc', 'pandoc', 'gitrebase', 'gitcommit', 'vcs-commit', 'hybrid', 'text', 'help', 'tex']
+repo = 'dhruvasagar/vim-table-mode'
+on_ft = [
+  'rst',
+  'markdown',
+  'asciidoc',
+  'pandoc',
+  'gitrebase',
+  'gitcommit',
+  'vcs-commit',
+  'hybrid',
+  'text',
+  'help',
+  'tex',
+]
 
 [[plugins]]
 repo = 'lervag/vimtex'
-hook_add    = 'source ~/.config/nvim/plugins/plugin-vimtex.vim'
-on_ft       = ['tex', 'plaintex']
+hook_add = 'source ~/.config/nvim/plugins/plugin-vimtex.vim'
+on_ft = ['tex', 'plaintex']
 
 # Asciidoc (w/ asciidoctor)
 [[plugins]]
-repo        = 'habamax/vim-asciidoctor'
-on_ft       = ['asciidoc']
-hook_add    = 'source ~/.config/nvim/plugins/plugin-asciidoctor.vim'
+repo = 'habamax/vim-asciidoctor'
+on_ft = ['asciidoc']
+hook_add = 'source ~/.config/nvim/plugins/plugin-asciidoctor.vim'
 
 # PlantUML
 [[plugins]]
-repo        = 'aklt/plantuml-syntax'
-on_ft       = 'plantuml'
+repo = 'aklt/plantuml-syntax'
+on_ft = 'plantuml'
 
 # Gist
 [[plugins]]
-repo        = 'lambdalisue/vim-gista'
+repo = 'lambdalisue/vim-gista'
 #on_cmd      = 'Gista'
-hook_add    = 'source ~/.config/nvim/plugins/plugin-vim-gista.vim'
+hook_add = 'source ~/.config/nvim/plugins/plugin-vim-gista.vim'
 
 # wakatime
 #[[plugins]]
@@ -179,8 +220,8 @@ hook_add    = 'source ~/.config/nvim/plugins/plugin-vim-gista.vim'
 
 # asm
 [[plugins]]
-repo        = 'shiracamus/vim-syntax-x86-objdump-d'
-on_ft       = ['asm']
+repo = 'shiracamus/vim-syntax-x86-objdump-d'
+on_ft = ['asm']
 
 [[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
@@ -223,6 +264,6 @@ repo = 'kristijanhusak/defx-icons'
 repo = 'kristijanhusak/defx-git'
 
 [plugins.ftplugin]
-defx= '''
+defx = '''
   source ~/.config/nvim/plugins/plugin-defx.vim
 '''
