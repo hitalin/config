@@ -12,7 +12,7 @@ repo = 'airblade/vim-rooter'
 repo = 'Shougo/context_filetype.vim'
 
 [[plugins]]
-repo     = 'Shougo/echodoc.vim'
+repo = 'Shougo/echodoc.vim'
 hook_add = 'source ~/.config/nvim/plugins/plugin-echodoc.vim'
 
 [[plugins]]
@@ -114,11 +114,11 @@ repo = 'numirias/semshi'
 
 # pandoc markdown
 [[plugins]]
-repo      = 'vim-pandoc/vim-pandoc'
-hook_add  = 'source ~/.config/nvim/plugins/plugin-vim-pandoc.vim'
+repo = 'vim-pandoc/vim-pandoc'
+hook_add = 'source ~/.config/nvim/plugins/plugin-vim-pandoc.vim'
 
 [[plugins]]
-repo      = 'vim-pandoc/vim-pandoc-syntax'
+repo = 'vim-pandoc/vim-pandoc-syntax'
 
 # ime
 [[plugins]]
