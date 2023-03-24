@@ -246,8 +246,6 @@ for_window [class="Alacritty"] move to workspace $ws1
 exec --no-startup-id superproductivity
 for_window [class="superProductivity"] move to workspace $ws2
 
-#exec --no-startup-id pomodoneapp
-#for_window [class="PomoDoneApp"] move to workspace $ws3
 exec --no-startup-id dex -v $HOME/.config/autostart/TogglDesktop.desktop
 for_window [class="Toggl Desktop"] move to workspace $ws3
 
