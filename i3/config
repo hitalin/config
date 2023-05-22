@@ -33,7 +33,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- sh $HOME/config/i3lock-co
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return  exec --no-startup-id alacritty
+bindsym $mod+Return  exec --no-startup-id wezterm
 
 # start bemoji (a emoji picker)
 bindsym Mod4+Shift+b exec bemoji -t
@@ -242,8 +242,8 @@ exec --no-startup-id authy
 ## GUI app
 
 ## GUI apps in workspaces
-exec --no-startup-id alacritty
-for_window [class="Alacritty"] move to workspace $ws1
+exec --no-startup-id wezterm
+for_window [class="WezTerm"] move to workspace $ws1
 
 exec --no-startup-id superproductivity
 for_window [class="superProductivity"] move to workspace $ws2
