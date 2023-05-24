@@ -102,6 +102,10 @@ repo = 'williamboman/mason.nvim'
 on_source = 'nvim-lspconfig'
 
 [[plugins]]
+repo = 'williamboman/mason-lspconfig.nvim'
+on_source = 'nvim-lspconfig'
+
+[[plugins]]
 repo = 'matsui54/denops-popup-preview.vim'
 on_source = 'nvim-lspconfig'
 depends = ['mason.nvim', 'pum.vim']

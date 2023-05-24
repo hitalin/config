@@ -49,12 +49,15 @@ local on_attach = function (client, bufnr)
     false)
 end
 
-local lsp_installer = require("nvim-lsp-installer")
-lsp_installer.on_server_ready(function(server)
-    if server.name == "rust-analyzer" then
+local lsp_installer = require("mason")
+local nvim_lsp = require('lspconfig')
+local mason_lspconfig = require('mason-lspconfig')
+
+mason_lspconfig.setup_handlers({ function(server_name)
+    if server_name == "rust-analyzer" then
         return
     end
-    local nvim_lsp = require('lspconfig')
+
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     local opts = {}
     capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -73,14 +76,11 @@ lsp_installer.on_server_ready(function(server)
     opts.on_attach = on_attach
     opts.capabilities = capabilities
 
---    local init_options = {}
-    if server.name == "clangd" then
---        init_options.compilationDatabasePath = "build"
---        opts.init_options = init_options
+    if server_name == "clangd" then
         opts.root_dir = nvim_lsp.util.root_pattern('build/compile_commands.json', '.git')
     end
 
     server:setup(opts)
     vim.cmd [[ do User LspAttachBuffers ]]
-end)
+end})
 
