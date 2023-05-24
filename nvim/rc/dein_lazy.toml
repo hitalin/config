@@ -64,7 +64,7 @@ on_event = 'BufEnter'
 depends = [
   'lspkind-nvim',
   'lsp_signature.nvim',
-  'nvim-lsp-installer',
+  'mason.nvim',
   'lspsaga.nvim',
 ]
 hook_source = 'luafile ~/.config/nvim/plugins/lua/plugin-nvim-lsp.lua'
@@ -98,13 +98,13 @@ repo = 'kyazdani42/nvim-web-devicons'
 on_source = 'nvim-lspconfig'
 
 [[plugins]]
-repo = 'williamboman/nvim-lsp-installer'
+repo = 'williamboman/mason.nvim'
 on_source = 'nvim-lspconfig'
 
 [[plugins]]
 repo = 'matsui54/denops-popup-preview.vim'
 on_source = 'nvim-lspconfig'
-depends = ['nvim-lsp-installer', 'pum.vim']
+depends = ['mason.nvim', 'pum.vim']
 hook_source = 'source ~/.config/nvim/plugins/plugin-denops-popup-preview.vim'
 
 [[plugins]]
