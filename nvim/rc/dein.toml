@@ -101,7 +101,7 @@ repo = 'justinmk/vim-sneak'
 repo = 'unblevable/quick-scope'
 
 [[plugins]]
-repo = 'airblade/vim-gitgutter'
+repo = 'lewis6991/gitsigns.nvm'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
