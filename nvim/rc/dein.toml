@@ -95,7 +95,7 @@ repo = 'junegunn/vim-easy-align'
 repo = 'preservim/nerdcommenter'
 
 [[plugins]]
-repo = 'justinmk/vim-sneak'
+repo = 'phaazon/hop.nvim'
 
 [[plugins]]
 repo = 'unblevable/quick-scope'
