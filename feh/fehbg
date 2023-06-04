@@ -1,4 +1,5 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill ~/config/feh/nil-i0z0m.jpg
+#feh --no-fehbg --bg-fill ~/config/feh/nil-i0z0m.jpg
 #feh --no-fehbg --bg-scale ~/config/feh/elementary.jpg
+feh --no-fehbg --bg-fill ~/config/feh/lainchan-ai-art.jpg
 #feh --no-fehbg --bg-scale ~/.config/polybar/panels/wallpapers/elementary.jpg
