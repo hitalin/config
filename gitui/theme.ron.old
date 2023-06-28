@@ -5,7 +5,7 @@
     selection_fg: White,
     cmdbar_bg: Blue,
     cmdbar_extra_lines_bg: Blue,
-    disabled_fg: Blue,
+    disabled_fg: Purple,
     diff_line_add: Green,
     diff_line_delete: Red,
     diff_file_added: LightGreen,
