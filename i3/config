@@ -248,8 +248,8 @@ for_window [class="WezTerm"] move to workspace $ws1
 #exec --no-startup-id superproductivity
 #for_window [class="superProductivity"] move to workspace $ws2
 
-#exec --no-startup-id dex -v $HOME/.config/autostart/TogglDesktop.desktop
-#for_window [class="Toggl Desktop"] move to workspace $ws3
+exec --no-startup-id dex -v $HOME/.config/autostart/TogglDesktop.desktop
+for_window [class="Toggl Desktop"] move to workspace $ws3
 #exec --no-startup-id dex -v $HOME/.config/autostart/ticktick.desktop
 #for_window [class="ticktick"] move to workspace $ws3
 
