@@ -1,11 +1,8 @@
 memodir = "~/Dropbox/md/memo/"
+memotemplate = "~/Dropbox/md/memo/template.md"
 editor = "vim"
-column = 20
-width = 0
+column = 30
 selectcmd = "fzf"
 grepcmd = "rg -nH ${PATTERN} ${FILES}"
-memotemplate = ""
-assetsdir = "."
-pluginsdir = "~/.config/memo/plugins"
-templatedirfile = ""
-templatebodyfile = ""
+ssetsdir = "~/Dropbox/md/memo/assets/"
+pluginsdir = "~/.config/memo/plugins/"
