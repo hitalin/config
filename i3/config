@@ -38,6 +38,9 @@ bindsym $mod+Return  exec --no-startup-id wezterm
 # start bemoji (a emoji picker)
 bindsym Mod4+Shift+b exec bemoji -t
 
+# start todo.fi (a task picker)
+bindsym Mod4+Shift+t exec $HOME/dotfiles/bin/todofi.sh
+
 # start rofi (a program launcher)
 bindsym $mod+d exec --no-startup-id "rofi -combi-modi drun,run -show combi"
 bindsym $mod+g exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
