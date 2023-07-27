@@ -250,8 +250,8 @@ for_window [class="WezTerm"] move to workspace $ws1
 
 #exec --no-startup-id superproductivity
 #for_window [class="superProductivity"] move to workspace $ws2
-exec --no-startup-id thunderbird
-for_window [class="thunderbird"] move to workspace $ws2
+#exec --no-startup-id thunderbird
+#for_window [class="thunderbird"] move to workspace $ws2
 
 exec --no-startup-id dex -v $HOME/.config/autostart/TogglDesktop.desktop
 for_window [class="Toggl Desktop"] move to workspace $ws3
@@ -260,8 +260,8 @@ for_window [class="Toggl Desktop"] move to workspace $ws3
 
 #exec --no-startup-id dex -v $HOME/.config/autostart/todoist.desktop
 #for_window [class="Todoist"] move to workspace $ws4
-exec --no-startup-id dex -v $HOME/.config/autostart/clickup.desktop
-for_window [class="ClickUp"] move to workspace $ws4
+#exec --no-startup-id dex -v $HOME/.config/autostart/clickup.desktop
+#for_window [class="ClickUp"] move to workspace $ws4
 
 exec --no-startup-id dex -v $HOME/.config/autostart/vivaldi-stable.desktop
 for_window [class="Vivaldi-stable"] move to workspace $ws5
