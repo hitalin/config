@@ -1,6 +1,6 @@
 EXCLUDE_FILES  = .git .gitmodules .gitignore
 INSTALL_TARGET = $(wildcard .??*)
-XDG_CONFIGS	   = autostart alacritty dunst fontconfig sway i3 zathura mpv pandoc memo gitui
+XDG_CONFIGS	   = autostart alacritty dunst fontconfig felix sway i3 zathura mpv pandoc memo gitui
 
 CONFIG_DIR     = $(HOME)/.config
 NVIM_PATH      = $(CONFIG_DIR)/nvim
