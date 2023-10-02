@@ -1,23 +1,20 @@
-EXCLUDE_FILES  = .git .gitmodules .gitignore
-INSTALL_TARGET = $(wildcard .??*)
-XDG_CONFIGS	   = autostart alacritty dunst fontconfig felix sway i3 zathura mpv cmus pandoc memo gitui neofetch
-
+EXCLUDE_FILES  = .git .gitmodules .gitignore .DS_Store README.md avatar.png set.sh Makefile config
+INSTALL_TARGET = $(wildcard ??*)
+XDG_CONFIGS	   = $(filter-out $(EXCLUDE_FILES), $(INSTALL_TARGET))
 CONFIG_DIR     = $(HOME)/.config
-NVIM_PATH      = $(CONFIG_DIR)/nvim
 
-.PHONY: deploy init
+.PHONY: init deploy uninstall list
 
 $(CONFIG_DIR):
 	mkdir -p $@
 
-$(NVIM_PATH):
-	ln -sfnv $(PWD)/nvim $@
+init: $(CONFIG_DIR)
 
 deploy: init
 	@$(foreach val, $(XDG_CONFIGS), ln -sfnv $(abspath $(val)) $(CONFIG_DIR)/$(val);)
 
-init: $(CONFIG_DIR) $(NVIM_PATH)
-
 uninstall:
-	@unlink $(NVIM_PATH)
 	@$(foreach val, $(XDG_CONFIGS), unlink $(CONFIG_DIR)/$(val);)
+
+list:
+	@$(foreach val, $(XDG_CONFIGS), /bin/ls -dF $(val);)
