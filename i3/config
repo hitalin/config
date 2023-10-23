@@ -264,8 +264,10 @@ for_window [class="Toggl Desktop"] move to workspace $ws3
 #exec --no-startup-id dex -v $HOME/.config/autostart/clickup.desktop
 #for_window [class="ClickUp"] move to workspace $ws4
 
-exec --no-startup-id dex -v $HOME/.config/autostart/vivaldi-stable.desktop
-for_window [class="Vivaldi-stable"] move to workspace $ws5
+#exec --no-startup-id dex -v $HOME/.config/autostart/vivaldi-stable.desktop
+#for_window [class="Vivaldi-stable"] move to workspace $ws5
+exec --no-startup-id dex -v $HOME/.config/autostart/firefox.desktop
+for_window [class="firefox"] move to workspace $ws5
 
 #exec --no-startup-id dex -v $HOME/.config/autostart/Focus_To-Do.desktop
 #exec --no-startup-id dex -v $HOME/.config/autostart/LINE.desktop
