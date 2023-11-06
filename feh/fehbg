@@ -1,2 +1,3 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill ~/config/feh/copland-os.jpg
+#feh --no-fehbg --bg-fill ~/config/feh/copland-os.jpg
+feh --no-fehbg --bg-fill ~/config/feh/arch-linux.jpg
