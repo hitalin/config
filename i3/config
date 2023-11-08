@@ -253,38 +253,38 @@ for_window [class="WezTerm"] move to workspace $ws1
 #exec --no-startup-id thunderbird
 #for_window [class="thunderbird"] move to workspace $ws2
 
-exec --no-startup-id dex -v $HOME/.config/autostart/TogglDesktop.desktop
+exec --no-startup-id dex -v $HOME/.config/autostart-i3/TogglDesktop.desktop
 for_window [class="Toggl Desktop"] move to workspace $ws3
-#exec --no-startup-id dex -v $HOME/.config/autostart/ticktick.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/ticktick.desktop
 #for_window [class="ticktick"] move to workspace $ws3
 
-#exec --no-startup-id dex -v $HOME/.config/autostart/todoist.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/todoist.desktop
 #for_window [class="Todoist"] move to workspace $ws4
-#exec --no-startup-id dex -v $HOME/.config/autostart/clickup.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/clickup.desktop
 #for_window [class="ClickUp"] move to workspace $ws4
 
-#exec --no-startup-id dex -v $HOME/.config/autostart/vivaldi-stable.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/vivaldi-stable.desktop
 #for_window [class="Vivaldi-stable"] move to workspace $ws5
-#exec --no-startup-id dex -v $HOME/.config/autostart/firefox.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/firefox.desktop
 #for_window [class="firefox"] move to workspace $ws5
 
-#exec --no-startup-id dex -v $HOME/.config/autostart/Focus_To-Do.desktop
-#exec --no-startup-id dex -v $HOME/.config/autostart/LINE.desktop
-exec --no-startup-id dex -v $HOME/.config/autostart/brave.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/Focus_To-Do.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/LINE.desktop
+exec --no-startup-id dex -v $HOME/.config/autostart-i3/brave.desktop
 for_window [class="Brave-browser"] move to workspace $ws6
 
-#exec --no-startup-id dex -v $HOME/.config/autostart/discord.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/discord.desktop
 #for_window [class="discord"] move to workspace $ws7
 
-#exec --no-startup-id dex -v $HOME/.config/autostart/slack.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/slack.desktop
 #for_window [class="Slack"] move to workspace $ws8
 
-#exec --no-startup-id dex -v $HOME/.config/autostart/keybase_autostart.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/keybase_autostart.desktop
 #for_window [class="Keybase"] move to workspace $ws9
-#exec --no-startup-id dex -v $HOME/.config/autostart/TelegramDesktop.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/TelegramDesktop.desktop
 #for_window [class="TelegramDesktop"] move to workspace $ws9
 
-#exec --no-startup-id dex -v $HOME/.config/autostart/nheko.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/nheko.desktop
 #for_window [class="nheko"] move to workspace $ws10
-#exec --no-startup-id dex -v $HOME/.config/autostart/gajim.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/gajim.desktop
 #for_window [class="Gajim"] move to workspace $ws10
