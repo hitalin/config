@@ -63,7 +63,3 @@ syntax_highlight: true
 #     Rgb(u8, u8, u8)
 #     AnsiValue(u8)
 # For more details, see https://docs.rs/termion/1.5.6/termion/color/index.html
-color:
-  dir_fg: LightCyan
-  file_fg: LightWhite
-  symlink_fg: LightYellow
