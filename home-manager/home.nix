@@ -35,6 +35,7 @@
     pkgs.thefuck
     pkgs.zoxide
     pkgs.vscode
+    pkgs.keychain
     pkgs.keepassxc
     pkgs.brave
 
