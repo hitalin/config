@@ -28,6 +28,7 @@
     pkgs.pingu
     pkgs.ripgrep
     pkgs.delta
+    pkgs.ghq
     pkgs.vscode
     pkgs.keepassxc
     pkgs.brave
