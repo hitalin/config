@@ -24,11 +24,16 @@
     pkgs.fzf
     pkgs.bat
     pkgs.bottom
+    pkgs.htop-vim
     pkgs.exa
     pkgs.pingu
     pkgs.ripgrep
+    pkgs.neofetch
+    pkgs.felix-fm
     pkgs.delta
     pkgs.ghq
+    pkgs.thefuck
+    pkgs.zoxide
     pkgs.vscode
     pkgs.keepassxc
     pkgs.brave
