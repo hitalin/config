@@ -1,21 +1,20 @@
 [Hotkey]
 # Enumerate when press trigger key repeatedly
 EnumerateWithTriggerKeys=True
+# Enumerate Input Method Forward
+EnumerateForwardKeys=
+# Enumerate Input Method Backward
+EnumerateBackwardKeys=
 # Skip first input method while enumerating
 EnumerateSkipFirst=False
 
 [Hotkey/TriggerKeys]
 0=Control+space
 1=Zenkaku_Hankaku
+2=Hangul
 
 [Hotkey/AltTriggerKeys]
 0=Shift_L
-
-[Hotkey/EnumerateForwardKeys]
-0=Control+Shift_L
-
-[Hotkey/EnumerateBackwardKeys]
-0=Control+Shift_R
 
 [Hotkey/EnumerateGroupForwardKeys]
 0=Super+space
@@ -24,10 +23,10 @@ EnumerateSkipFirst=False
 0=Shift+Super+space
 
 [Hotkey/ActivateKeys]
-0=Henkan
+0=Hangul_Hanja
 
 [Hotkey/DeactivateKeys]
-0=Muhenkan
+0=Hangul_Romaja
 
 [Hotkey/PrevPage]
 0=Up
@@ -61,6 +60,10 @@ CompactInputMethodInformation=True
 ShowFirstInputMethodInformation=True
 # Default page size
 DefaultPageSize=5
+# Override Xkb Option
+OverrideXkbOption=False
+# Custom Xkb Option
+CustomXkbOption=
 # Force Enabled Addons
 EnabledAddons=
 # Force Disabled Addons
