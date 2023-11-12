@@ -87,6 +87,6 @@
 
   programs.brave = {
     enable = true;
-    commandLineArgs = ["--enable-features=UseOzonePlatfor" "--ozone-platform=wayland"];
+    commandLineArgs = ["--enable-features=UseOzonePlatfor" "--ozone-platform=x11"];
   };
 }
