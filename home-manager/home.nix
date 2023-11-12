@@ -31,6 +31,7 @@
     pkgs.neofetch
     pkgs.felix-fm
     pkgs.delta
+    pkgs.gitui
     pkgs.ghq
     pkgs.thefuck
     pkgs.zoxide
