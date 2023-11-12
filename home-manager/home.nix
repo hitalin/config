@@ -38,7 +38,6 @@
     pkgs.vscode
     pkgs.keychain
     pkgs.keepassxc
-    pkgs.brave
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -85,4 +84,9 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  programs.brave = {
+    enable = true;
+    commandLineArgs = ["--enable-features=UseOzonePlatfor" "--ozone-platform=wayland"];
+  };
 }
