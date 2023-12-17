@@ -264,10 +264,8 @@ exec --no-startup-id greenclip daemon
 exec --no-startup-id dropbox
 exec --no-startup-id megasync
 exec --no-startup-id rescuetime
-#exec --no-startup-id appimagelauncherd
 ## GUI apps in scratchpad
 exec --no-startup-id keepassxc
-#exec --no-startup-id authy
 
 ## GUI app
 
@@ -304,3 +302,5 @@ for_window [class="Brave-browser"] move to workspace $ws6
 
 #exec --no-startup-id dex -v $HOME/.config/autostart-i3/TelegramDesktop.desktop
 #for_window [class="TelegramDesktop"] move to workspace $ws9
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/signal-desktop.desktop
+#for_window [class="Signal"] move to workspace $ws9
