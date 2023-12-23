@@ -273,11 +273,13 @@ exec --no-startup-id keepassxc
 exec --no-startup-id wezterm
 for_window [class="WezTerm"] move to workspace $ws1
 
-#exec --no-startup-id superproductivity
-#for_window [class="superProductivity"] move to workspace $ws2
 #exec --no-startup-id thunderbird
 #for_window [class="thunderbird"] move to workspace $ws2
+#exec --no-startup-id gajim
+#for_window [class="Gajim"] move to workspace $ws2
 
+#exec --no-startup-id superproductivity
+#for_window [class="superProductivity"] move to workspace $ws3
 exec --no-startup-id dex -v $HOME/.config/autostart-i3/TogglDesktop.desktop
 for_window [class="Toggl Desktop"] move to workspace $ws3
 
