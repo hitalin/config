@@ -65,10 +65,10 @@ bindsym $mod+Return exec --no-startup-id wezterm
 bindsym $mod+e exec --no-startup-id "emacsclient -c $@ &"
 
 # start bemoji (a emoji picker)
-bindsym Mod4+Shift+b exec bemoji -t
+bindsym $mod+Shift+b exec bemoji -t
 
 # start todo.fi (a task picker)
-bindsym Mod4+Shift+t exec $HOME/dotfiles/bin/todofi.sh
+bindsym $mod+Shift+t exec $HOME/dotfiles/bin/todofi.sh
 
 # start rofi (a program launcher)
 bindsym $mod+d exec --no-startup-id "rofi -combi-modi drun,run -show combi"
@@ -241,8 +241,6 @@ bar {
         }
 
 }
-# https://github.com/adi1090x/polybar-themes
-#exec_always --no-startup-id $HOME/.config/polybar/launch.sh --panels
 
 # for only i3-gaps
 gaps outer 2
@@ -281,8 +279,6 @@ for_window [class="WezTerm"] move to workspace $ws1
 #exec --no-startup-id gajim
 #for_window [class="Gajim"] move to workspace $ws2
 
-#exec --no-startup-id superproductivity
-#for_window [class="superProductivity"] move to workspace $ws3
 exec --no-startup-id dex -v $HOME/.config/autostart-i3/TogglDesktop.desktop
 for_window [class="Toggl Desktop"] move to workspace $ws3
 
