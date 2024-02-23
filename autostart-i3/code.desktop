@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/usr/bin/code
+Name=code
+Comment=capture the namespace context for a code fragment
+Type=Application
