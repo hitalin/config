@@ -35,8 +35,6 @@ import XMonad.Layout.ToggleLayouts     -- Full window at any time
 import XMonad.Layout.TwoPane
 import XMonad.Layout.ThreeColumns
 
-import XMonad.Prompt
-import XMonad.Prompt.Window            -- pops up a prompt with window names
 import XMonad.Util.EZConfig            -- removeKeys, additionalKeys
 import XMonad.Util.Run
 import XMonad.Util.Run(spawnPipe)      -- spawnPipe, hPutStrLn
@@ -47,8 +45,7 @@ import Graphics.X11.ExtraTypes.XF86
 import XMonad.Config.Desktop           -- for chromium
 
 -- xmonad contrib
---import XMonad.Actions.GridSelect (goToSelected, defaultGSConfig)
---import XMonad.Prompt.Shell
+import XMonad.Actions.GridSelect
 -------------------------------------------------------------------------------
 -- local variables
 -------------------------------------------------------------------------------
@@ -72,13 +69,9 @@ borderwidth = 1
 mynormalBorderColor  = "#262626"
 myfocusedBorderColor = "#ededed"
 
--- Float window control width
-moveWD = borderwidth
-resizeWD = 2*borderwidth
-
 -- gapwidth
-gapwidth  = 2
-gwU = 32
+gapwidth = 2
+gwU = 1
 gwD = 1
 gwL = 1
 gwR = 1
@@ -211,8 +204,7 @@ main = do
        -- Toggle trackpoint (Lenovo PC)
        , ("M1-<Escape>", spawn "trackpoint_toggle.sh")
        -- for xmonad contrib
-       --, ("M-g"      , goToSelected defaultGSConfig)
-       --, ("M-p"      , shellPrompt defaultXPConfig)
+       , ("M-g"      , goToSelected def)
        ]
 
 -------------------------------------------------------------------------------
@@ -228,9 +220,11 @@ myLayout = spacing gapwidth $ gaps [(U, gwU),(D, gwD),(L, gwL),(R, gwR)]
 -- myStartupHook:     Start up applications
 -------------------------------------------------------------------------------
 myStartupHook = do
+        spawnOnce "fcitx5"
         spawnOnce "dropbox"
+        spawnOnce "greenclip daemon"
         spawnOnce "picom -b --config $HOME/config/picom/picom.conf"
-        spawnOnce "sh $HOME/config/feh/.fehbg"
+        spawnOnce "sh $HOME/config/feh/fehbg"
         spawnOnce "LC_CTYPE=ja_JP.UTF-8 emacs --daemon"
 
 -------------------------------------------------------------------------------
@@ -248,7 +242,7 @@ myManageHookShift = composeAll
 myManageHookFloat = composeAll
     [
       className =? "feh"              --> doCenterFloat
-    , title     =? "urxvt_float"      --> doSideFloat SC
+    , title     =? "feh_float"      --> doSideFloat SC
     , isFullscreen                    --> doFullFloat
     ]
 
@@ -273,25 +267,3 @@ wsPP = xmobarPP { ppOrder           = \(ws:l:t:_)  -> [ws,t]
                 , ppWsSep           = " "
                 , ppSep             = "  "
                 }
-
--------------------------------------------------------------------------------
--- myXPConfig:        XPConfig
--------------------------------------------------------------------------------
---myXPConfig = defaultXPConfig
---                { font              = "xft:Cica:size=12:antialias=true"
---                , fgColor           = colorfg
---                , bgColor           = colorNormalbg
---                , borderColor       = colorNormalbg
---                , height            = 20
---                , promptBorderWidth = 1
---                , autoComplete      = Just 100000
---                , bgHLight          = colorWhite
---                , fgHLight          = colorNormalbg
---                , position          = Bottom
---                }
-
--------------------------------------------------------------------------------
--- newMouse:         Right click is used for resizing window
--------------------------------------------------------------------------------
---myMouse x = [ ((modm, button3), (\w -> focus w >> Flex.mouseResizeWindow w)) ]
---newMouse x = M.union (mouseBindings defaultConfig x) (M.fromList (myMouse x))

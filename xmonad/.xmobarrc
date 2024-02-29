@@ -2,12 +2,13 @@
 Config { font = "xft:Cica:size=13"
        , bgColor = "#1c1c1c"
        , fgColor = "#404040"
-       , position = BottomSize C 100 33
-       -- , position = Static { xpos = 37 , ypos = 0, width = 1845, height = 18 }
+       , alpha = 255
+       , position = Bottom
        , lowerOnStart = False
        , overrideRedirect = False
        , border = BottomBM 0
        , borderColor = "#4e4e4e"
+       , borderWidth = 1
        , commands = [ Run Network "wlp3s0" [ "-t"       , "Net:⇩<rx>⇧<tx> "
                                            , "--Low"    , "40"
                                            , "--High"   , "200"
