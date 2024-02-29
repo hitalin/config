@@ -1,0 +1,49 @@
+-- vim: ft=haskell
+Config { font = "xft:Cica:size=13"
+       , bgColor = "#1c1c1c"
+       , fgColor = "#404040"
+       , position = BottomSize C 100 33
+       -- , position = Static { xpos = 37 , ypos = 0, width = 1845, height = 18 }
+       , lowerOnStart = False
+       , overrideRedirect = False
+       , border = BottomBM 0
+       , borderColor = "#4e4e4e"
+       , commands = [ Run Network "wlp3s0" [ "-t"       , "Net:⇩<rx>⇧<tx> "
+                                           , "--Low"    , "40"
+                                           , "--High"   , "200"
+                                           , "-m"       , "3"
+                                           , "--normal" , "#b0bdbd"
+                                           , "--high"   , "#a5d6a7"
+                                           ] 10
+                    , Run MultiCpu         [ "-t"       , "CPU:<total0>.<total1>.<total2>.<total3> "
+                                           , "--Low"    , "40"
+                                           , "--High"   , "85"
+                                           , "-m"       , "2"
+                                           , "--normal" , "#b0bdbd"
+                                           , "--high"   , "#ef9a9a"
+                                           ] 10
+                    , Run Memory           [ "-t"       , "Mem:<usedratio>% "
+                                           , "--Low"    , "40"
+                                           , "--High"   , "90"
+                                           , "-m"       , "2"
+                                           , "--normal" , "#b0bdbd"
+                                           , "--high"   , "#ef9a9a"
+                                           ] 10
+                    , Run BatteryP         ["BAT0"]
+                                           [ "-t"       , "Bat:<acstatus> "
+                                           , "--Low"    , "20"
+                                           , "--High"   , "80"
+                                           , "--low"    , "#ef9a9a"
+                                           , "--normal" , "#b0bdbd"
+                                           , "--"
+                                           , "-o" , "<left>% (<timeleft>)"
+                                           , "-O" , "Charging <left>%"
+                                           , "-i" , "<left>%"
+                                           ] 50
+                    , Run Date "%a %m/%d %H:%M" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " %StdinReader% }{ %multicpu%%memory%%wlp3s0%%battery%<fc=#ece391>%date%</fc> "
+       }
