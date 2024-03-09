@@ -1,4 +1,4 @@
 [Desktop Entry]
-Exec=/usr/bin/clickup
+Exec=/bin/clickup
 Name=clickup
 Type=Application

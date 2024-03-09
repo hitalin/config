@@ -275,14 +275,16 @@ for_window [class="WezTerm"] move to workspace $ws1
 #for_window [class="firefox"] move to workspace $ws2
 #exec --no-startup-id thunderbird
 #for_window [class="thunderbird"] move to workspace $ws2
+exec --no-startup-id dex -v $HOME/.config/autostart-i3/clickup.desktop
+for_window [class="ClickUp"] move to workspace $ws2
 
 exec --no-startup-id dex -v $HOME/.config/autostart-i3/code.desktop
 for_window [class="Code"] move to workspace $ws3
 
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/linear.desktop
+#for_window [class="Linear"] move to workspace $ws4
 #exec --no-startup-id dex -v $HOME/.config/autostart-i3/todoist.desktop
 #for_window [class="Todoist"] move to workspace $ws4
-#exec --no-startup-id dex -v $HOME/.config/autostart-i3/clickup.desktop
-#for_window [class="ClickUp"] move to workspace $ws4
 exec --no-startup-id obsidian
 for_window [class="obsidian"] move to workspace $ws4
 
