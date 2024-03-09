@@ -271,13 +271,11 @@ exec --no-startup-id keepassxc
 exec --no-startup-id wezterm
 for_window [class="WezTerm"] move to workspace $ws1
 
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/firefox.desktop
+#for_window [class="firefox"] move to workspace $ws2
 #exec --no-startup-id thunderbird
 #for_window [class="thunderbird"] move to workspace $ws2
-#exec --no-startup-id gajim
-#for_window [class="Gajim"] move to workspace $ws2
 
-#exec --no-startup-id dex -v $HOME/.config/autostart-i3/TogglDesktop.desktop
-#for_window [class="Toggl Desktop"] move to workspace $ws3
 exec --no-startup-id dex -v $HOME/.config/autostart-i3/code.desktop
 for_window [class="Code"] move to workspace $ws3
 
@@ -285,9 +283,11 @@ for_window [class="Code"] move to workspace $ws3
 #for_window [class="Todoist"] move to workspace $ws4
 #exec --no-startup-id dex -v $HOME/.config/autostart-i3/clickup.desktop
 #for_window [class="ClickUp"] move to workspace $ws4
+exec --no-startup-id obsidian
+for_window [class="obsidian"] move to workspace $ws4
 
-#exec --no-startup-id dex -v $HOME/.config/autostart-i3/firefox.desktop
-#for_window [class="firefox"] move to workspace $ws5
+exec --no-startup-id logseq
+for_window [class="Logseq"] move to workspace $ws5
 
 #exec --no-startup-id dex -v $HOME/.config/autostart-i3/Focus_To-Do.desktop
 #exec --no-startup-id dex -v $HOME/.config/autostart-i3/LINE.desktop
@@ -304,3 +304,5 @@ for_window [class="Brave-browser"] move to workspace $ws6
 #for_window [class="TelegramDesktop"] move to workspace $ws9
 #exec --no-startup-id dex -v $HOME/.config/autostart-i3/signal-desktop.desktop
 #for_window [class="Signal"] move to workspace $ws9
+#exec --no-startup-id gajim
+#for_window [class="Gajim"] move to workspace $ws9
