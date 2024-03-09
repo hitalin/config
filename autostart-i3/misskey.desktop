@@ -1,0 +1,18 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=misskey.pm
+Exec=/opt/brave-bin/brave --profile-directory=Default --app-id=elpbpmaepgpepkhmpbfijifbllmgccnj
+Icon=brave-elpbpmaepgpepkhmpbfijifbllmgccnj-Default
+StartupWMClass=crx_elpbpmaepgpepkhmpbfijifbllmgccnj
+Actions=Chats;Notifications
+
+[Desktop Action Chats]
+Name=Chats
+Exec=/opt/brave-bin/brave --profile-directory=Default --app-id=elpbpmaepgpepkhmpbfijifbllmgccnj --app-launch-url-for-shortcuts-menu-item=https://misskey.pm/my/messaging
+
+[Desktop Action Notifications]
+Name=Notifications
+Exec=/opt/brave-bin/brave --profile-directory=Default --app-id=elpbpmaepgpepkhmpbfijifbllmgccnj --app-launch-url-for-shortcuts-menu-item=https://misskey.pm/my/notifications
