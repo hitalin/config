@@ -287,9 +287,9 @@ for_window [class="Logseq"] move to workspace $ws5
 
 #exec --no-startup-id dex -v $HOME/.config/autostart-i3/Focus_To-Do.desktop
 #exec --no-startup-id dex -v $HOME/.config/autostart-i3/LINE.desktop
-exec --no-startup-id dex -v $HOME/.config/autostart-i3/clickup.desktop
-exec --no-startup-id dex -v $HOME/.config/autostart-i3/linear.desktop
-exec --no-startup-id dex -v $HOME/.config/autostart-i3/todoist.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/clickup.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/linear.desktop
+#exec --no-startup-id dex -v $HOME/.config/autostart-i3/todoist.desktop
 #exec --no-startup-id dex -v $HOME/.config/autostart-i3/misskey.desktop
 exec --no-startup-id dex -v $HOME/.config/autostart-i3/brave.desktop
 for_window [class="Brave-browser"] move to workspace $ws6
