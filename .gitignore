@@ -1,3 +1,4 @@
 environment.d/10-home-manager.conf
 .stack-work/
 dist-newstyle/
+hosts.yml
