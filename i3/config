@@ -279,11 +279,11 @@ for_window [class="WezTerm"] move to workspace $ws1
 exec --no-startup-id dex -v $HOME/.config/autostart-i3/code.desktop
 for_window [class="Code"] move to workspace $ws3
 
-exec --no-startup-id obsidian
-for_window [class="obsidian"] move to workspace $ws4
+#exec --no-startup-id obsidian
+#for_window [class="obsidian"] move to workspace $ws4
 
-exec --no-startup-id logseq
-for_window [class="Logseq"] move to workspace $ws5
+#exec --no-startup-id logseq
+#for_window [class="Logseq"] move to workspace $ws5
 
 #exec --no-startup-id dex -v $HOME/.config/autostart-i3/Focus_To-Do.desktop
 #exec --no-startup-id dex -v $HOME/.config/autostart-i3/LINE.desktop
