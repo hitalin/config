@@ -260,9 +260,8 @@ exec --no-startup-id fcitx5
 exec --no-startup-id dunst
 exec --no-startup-id greenclip daemon
 exec --no-startup-id dropbox
-exec --no-startup-id megasync
-exec --no-startup-id mullvad-vpn
 #exec --no-startup-id megasync
+#exec --no-startup-id mullvad-vpn
 exec --no-startup-id rescuetime
 ## GUI apps in scratchpad
 exec --no-startup-id keepassxc
