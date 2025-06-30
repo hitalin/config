@@ -5,6 +5,7 @@ pnpm = "10.12.1"
 
 "npm:@anthropic-ai/claude-code" = "latest"
 "npm:@google/gemini-cli" = "latest"
+"npm:@devcontainers/cli" = "latest"
 "npm:wrangler" = "latest"
 
 [tasks.setup-global-tools]
@@ -15,6 +16,7 @@ run = "mise install"
 description = "Update global development tools"
 run = [
     "mise upgrade",
+    "pnpm update -g @devcontainers/cli",
     "pnpm update -g @anthropic-ai/claude-code",
     "pnpm update -g @google/gemini-cli",
     "pnpm update -g wrangler"
