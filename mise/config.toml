@@ -1,0 +1,23 @@
+[tools]
+node = "lts"
+pnpm = "latest"
+
+[tasks.setup-global-tools]
+description = "Install global development tools"
+run = [
+    "pnpm install -g @anthropic-ai/claude-code",
+    "pnpm install -g @google/gemini-cli",
+    "pnpm install -g wrangler@latest"
+]
+
+[tasks.update-global-tools]
+description = "Update global development tools"
+run = [
+    "pnpm update -g @anthropic-ai/claude-code",
+    "pnpm update -g @google/gemini-cli",
+    "pnpm update -g wrangler@latest"
+]
+
+[settings]
+idiomatic_version_file_enable_tools = ['node']
+not_found_auto_install = true
