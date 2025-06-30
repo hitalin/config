@@ -1,23 +1,34 @@
 [tools]
-node = "lts"
-pnpm = "latest"
+ruby = "3.4.3"
+node = "22.15.0"
+pnpm = "10.12.1"
+
+"npm:@anthropic-ai/claude-code" = "latest"
+"npm:@google/gemini-cli" = "latest"
+"npm:wrangler" = "latest"
 
 [tasks.setup-global-tools]
 description = "Install global development tools"
-run = [
-    "pnpm install -g @anthropic-ai/claude-code",
-    "pnpm install -g @google/gemini-cli",
-    "pnpm install -g wrangler@latest"
-]
+run = "mise install"
 
 [tasks.update-global-tools]
 description = "Update global development tools"
 run = [
+    "mise upgrade",
     "pnpm update -g @anthropic-ai/claude-code",
     "pnpm update -g @google/gemini-cli",
-    "pnpm update -g wrangler@latest"
+    "pnpm update -g wrangler"
+]
+
+[tasks.check-versions]
+description = "check version of installed plugins"
+run = [
+    "mise list",
+    "claude --version",
+    "gemini --version",
+    "wrangler --version"
 ]
 
 [settings]
-idiomatic_version_file_enable_tools = ['node']
+idiomatic_version_file_enable_tools = ['node', "ruby"]
 not_found_auto_install = true
