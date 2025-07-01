@@ -7,7 +7,6 @@ pnpm = "10.12.1"
 "npm:@google/gemini-cli" = "latest"
 "npm:@devcontainers/cli" = "latest"
 "npm:wrangler" = "latest"
-"ubi:rails/rails-new" = "latest"
 
 [tasks.setup-global-tools]
 description = "Install global development tools"
