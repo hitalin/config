@@ -3,6 +3,7 @@ ruby = "3.4.3"
 node = "22.15.0"
 pnpm = "10.12.1"
 
+"npm:@openai/codex" = "latest"
 "npm:@anthropic-ai/claude-code" = "latest"
 "npm:@google/gemini-cli" = "latest"
 "npm:@devcontainers/cli" = "latest"
@@ -17,6 +18,7 @@ description = "Update global development tools"
 run = [
     "mise upgrade",
     "pnpm update -g @devcontainers/cli",
+    "pnpm update -g @openai/codex",
     "pnpm update -g @anthropic-ai/claude-code",
     "pnpm update -g @google/gemini-cli",
     "pnpm update -g wrangler"
@@ -26,6 +28,7 @@ run = [
 description = "check version of installed plugins"
 run = [
     "mise list",
+    "codex --version",
     "claude --version",
     "gemini --version",
     "wrangler --version"
