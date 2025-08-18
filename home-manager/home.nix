@@ -21,6 +21,9 @@
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
+    pkgs.gh
+    pkgs.gh-dash
+    pkgs.gh-copilot
     pkgs.gitui
     pkgs.bitwarden-cli
 
