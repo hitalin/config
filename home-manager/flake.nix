@@ -14,7 +14,14 @@
     { nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
+
+      # Import nixpkgs with unfree packages allowed
+      pkgs = import nixpkgs {
+        inherit system;
+        config = {
+          allowUnfree = true;
+        };
+      };
     in
     {
       homeConfigurations."taka" = home-manager.lib.homeManagerConfiguration {
