@@ -22,6 +22,8 @@
     # # "Hello, world!" when run.
     # pkgs.hello
     pkgs.todoist
+    pkgs.gh
+    pkgs.act
     pkgs.gitui
     pkgs.rbw
     pkgs.yazi
