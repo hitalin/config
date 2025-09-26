@@ -23,7 +23,7 @@
     # pkgs.hello
     pkgs.todoist
     pkgs.gitui
-    pkgs.bitwarden-cli
+    pkgs.rbw
     pkgs.yazi
     pkgs.atuin
 
