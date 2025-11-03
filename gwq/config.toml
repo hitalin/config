@@ -1,0 +1,52 @@
+[worktree]
+# Base directory for creating worktrees
+basedir = "~/.gwq"
+# Automatically create directories
+auto_mkdir = true
+
+[finder]
+# Enable preview window
+preview = true
+# Preview window size
+preview_size = 3
+
+[naming]
+# Directory name template
+# Available variables: Host, Owner, Repository, Branch, Hash
+template = "{{.Host}}/{{.Owner}}/{{.Repository}}/{{.Branch}}"
+# Invalid character replacement (applied to branch names)
+sanitize_chars = { "/" = "-", ":" = "-" }
+
+[ui]
+# Icon display
+icons = true
+# Display home directory as ~ in paths
+tilde_home = true
+
+[tmux]
+# Enable tmux integration
+enabled = true
+# Tmux command to use
+tmux_command = "tmux"
+# History limit for tmux sessions
+history_limit = 50000
+
+[claude]
+# Claude Code executable
+executable = "claude"
+# Timeout for Claude execution
+timeout = "30m"
+# Maximum parallel Claude executions
+max_parallel = 3
+# Configuration directory
+config_dir = "~/.config/gwq/claude"
+
+[claude.task]
+# Task queue configuration
+queue_dir = "~/.config/gwq/claude/queue"
+# Log retention in days
+log_retention_days = 30
+# Maximum log size in MB
+max_log_size_mb = 100
+# Auto cleanup old logs
+auto_cleanup = true
