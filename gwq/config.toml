@@ -1,6 +1,7 @@
 [worktree]
 # Base directory for creating worktrees
-basedir = "~/.gwq"
+# ghqと同じディレクトリを使用することで、リポジトリ管理を統一
+basedir = "~/.ghq"
 # Automatically create directories
 auto_mkdir = true
 
@@ -13,7 +14,8 @@ preview_size = 3
 [naming]
 # Directory name template
 # Available variables: Host, Owner, Repository, Branch, Hash
-template = "{{.Host}}/{{.Owner}}/{{.Repository}}/{{.Branch}}"
+# 並列型: yamisskey/, yamisskey-nayami/, yamisskey-muyami/
+template = "{{.Host}}/{{.Owner}}/{{.Repository}}-{{.Branch}}"
 # Invalid character replacement (applied to branch names)
 sanitize_chars = { "/" = "-", ":" = "-" }
 
