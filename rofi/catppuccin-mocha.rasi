@@ -1,0 +1,110 @@
+/* Catppuccin Mocha Theme for Rofi */
+
+* {
+    bg0:     #1e1e2e;
+    bg1:     #181825;
+    bg2:     #313244;
+    bg3:     #45475a;
+    fg0:     #cdd6f4;
+    fg1:     #bac2de;
+    fg2:     #a6adc8;
+    red:     #f38ba8;
+    green:   #a6e3a1;
+    yellow:  #f9e2af;
+    blue:    #89b4fa;
+    magenta: #cba6f7;
+    cyan:    #94e2d5;
+
+    accent:  @blue;
+    urgent:  @red;
+
+    background-color: transparent;
+    text-color:       @fg0;
+
+    margin:  0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    location:         center;
+    width:            600;
+    border-radius:    8;
+    background-color: @bg0;
+}
+
+mainbox {
+    padding: 12;
+}
+
+inputbar {
+    background-color: @bg1;
+    border-color:     @bg3;
+    border:           2;
+    border-radius:    8;
+    padding:          8 16;
+    spacing:          8;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color: @accent;
+}
+
+entry {
+    placeholder:       "Search...";
+    placeholder-color: @fg2;
+}
+
+message {
+    margin:           12 0 0;
+    border-radius:    8;
+    border-color:     @bg2;
+    background-color: @bg2;
+}
+
+textbox {
+    padding: 8 24;
+}
+
+listview {
+    background-color: transparent;
+    margin:           12 0 0;
+    lines:            8;
+    columns:          1;
+    fixed-height:     false;
+}
+
+element {
+    padding:       8 16;
+    spacing:       8;
+    border-radius: 8;
+}
+
+element normal active {
+    text-color: @accent;
+}
+
+element normal urgent {
+    text-color: @urgent;
+}
+
+element selected normal,
+element selected active {
+    background-color: @accent;
+    text-color:       @bg0;
+}
+
+element selected urgent {
+    background-color: @urgent;
+    text-color:       @bg0;
+}
+
+element-icon {
+    size:           1em;
+    vertical-align: 0.5;
+}
+
+element-text {
+    text-color: inherit;
+}

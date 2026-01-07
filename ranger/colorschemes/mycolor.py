@@ -1,7 +1,5 @@
-# This file is part of ranger, the console file manager.
-# License: GNU GPL version 3, see the file "AUTHORS" for details.
-
-from __future__ import (absolute_import, division, print_function)
+# Catppuccin Mocha colorscheme for ranger
+# Based on https://github.com/catppuccin/ranger
 
 from ranger.gui.colorscheme import ColorScheme
 from ranger.gui.color import (
@@ -12,10 +10,10 @@ from ranger.gui.color import (
 
 
 class Default(ColorScheme):
-    # progress_bar_color = blue
-    progress_bar_color = 239
+    # Catppuccin Mocha: surface0 = #313244
+    progress_bar_color = 236
 
-    def use(self, context):  # pylint: disable=too-many-branches,too-many-statements
+    def use(self, context):
         fg, bg, attr = default_colors
 
         if context.reset:
@@ -27,95 +25,116 @@ class Default(ColorScheme):
             else:
                 attr = normal
             if context.empty or context.error:
-                bg = red
-            if context.empty:
-                fg = black
+                # red = #f38ba8
+                fg = 211
+                bg = default
             if context.border:
-                fg = 245
+                # overlay0 = #6c7086
+                fg = 242
             if context.media:
                 if context.image:
-                    fg = yellow
+                    # yellow = #f9e2af
+                    fg = 223
                 else:
-                    fg = magenta
+                    # pink = #f5c2e7
+                    fg = 218
             if context.container:
-                fg = red
+                # peach = #fab387
+                fg = 216
             if context.directory:
                 attr |= bold
-                fg = blue
+                # blue = #89b4fa
+                fg = 111
             elif context.executable and not \
                     any((context.media, context.container,
                          context.fifo, context.socket)):
-                # attr |= bold
-                fg = green
+                # green = #a6e3a1
+                fg = 150
             if context.socket:
-                fg = magenta
+                # mauve = #cba6f7
+                fg = 183
                 attr |= bold
             if context.fifo or context.device:
-                fg = yellow
+                # yellow = #f9e2af
+                fg = 223
                 if context.device:
                     attr |= bold
             if context.link:
-                fg = cyan if context.good else magenta
+                # cyan = #94e2d5 if good, else maroon = #eba0ac
+                fg = 115 if context.good else 217
             if context.tag_marker and not context.selected:
                 attr |= bold
-                if fg in (red, magenta):
-                    fg = default
-                else:
-                    fg = red
+                # red = #f38ba8
+                fg = 211
             if not context.selected and (context.cut or context.copied):
-                fg = 238
+                # surface2 = #585b70
+                fg = 240
                 attr |= bold
             if context.main_column:
                 if context.selected:
                     attr |= bold
                 if context.marked:
                     attr |= bold
-                    fg = yellow
+                    # yellow = #f9e2af
+                    fg = 223
             if context.badinfo:
                 if attr & reverse:
-                    bg = magenta
+                    # red = #f38ba8
+                    bg = 211
                 else:
-                    fg = magenta
+                    fg = 211
 
             if context.inactive_pane:
-                fg = cyan
+                # subtext0 = #a6adc8
+                fg = 146
 
         elif context.in_titlebar:
             attr |= bold
             if context.hostname:
-                fg = red if context.bad else green
+                # red/green
+                fg = 211 if context.bad else 150
             elif context.directory:
-                fg = blue
+                # blue = #89b4fa
+                fg = 111
             elif context.tab:
                 if context.good:
-                    fg = black
-                    bg = green
+                    # base = #1e1e2e, green = #a6e3a1
+                    fg = 234
+                    bg = 150
             elif context.link:
-                fg = cyan
+                # cyan = #94e2d5
+                fg = 115
 
         elif context.in_statusbar:
             if context.permissions:
                 if context.good:
-                    fg = cyan
+                    # teal = #94e2d5
+                    fg = 115
                 elif context.bad:
-                    fg = magenta
+                    # red = #f38ba8
+                    fg = 211
             if context.marked:
                 attr |= bold | reverse
-                fg = yellow
+                # yellow = #f9e2af
+                fg = 223
             if context.message:
                 if context.bad:
                     attr |= bold
-                    fg = red
+                    # red = #f38ba8
+                    fg = 211
             if context.loaded:
                 bg = self.progress_bar_color
             if context.vcsinfo:
-                fg = blue
+                # blue = #89b4fa
+                fg = 111
                 attr &= ~bold
             if context.vcscommit:
-                fg = yellow
+                # yellow = #f9e2af
+                fg = 223
                 attr &= ~bold
             if context.vcsdate:
-                fg = cyan
+                # cyan = #94e2d5
+                fg = 115
                 attr &= ~bold
 
         if context.text:
@@ -124,7 +143,8 @@ class Default(ColorScheme):
 
         if context.in_taskview:
             if context.title:
-                fg = blue
+                # blue = #89b4fa
+                fg = 111
 
             if context.selected:
                 attr |= reverse
@@ -138,29 +158,40 @@ class Default(ColorScheme):
         if context.vcsfile and not context.selected:
             attr &= ~bold
             if context.vcsconflict:
-                fg = magenta
+                # mauve = #cba6f7
+                fg = 183
             elif context.vcschanged:
-                fg = red
+                # peach = #fab387
+                fg = 216
             elif context.vcsunknown:
-                fg = red
+                # red = #f38ba8
+                fg = 211
             elif context.vcsstaged:
-                fg = green
+                # green = #a6e3a1
+                fg = 150
             elif context.vcssync:
-                fg = green
+                # green = #a6e3a1
+                fg = 150
             elif context.vcsignored:
-                fg = default
+                # overlay0 = #6c7086
+                fg = 242
 
         elif context.vcsremote and not context.selected:
             attr &= ~bold
             if context.vcssync or context.vcsnone:
-                fg = green
+                # green = #a6e3a1
+                fg = 150
             elif context.vcsbehind:
-                fg = red
+                # red = #f38ba8
+                fg = 211
             elif context.vcsahead:
-                fg = blue
+                # blue = #89b4fa
+                fg = 111
             elif context.vcsdiverged:
-                fg = magenta
+                # mauve = #cba6f7
+                fg = 183
             elif context.vcsunknown:
-                fg = red
+                # red = #f38ba8
+                fg = 211
 
         return fg, bg, attr
