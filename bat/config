@@ -1,0 +1,14 @@
+# bat configuration
+# https://github.com/sharkdp/bat
+
+# Theme
+--theme="Catppuccin-mocha"
+
+# Show line numbers
+--style="numbers,changes,header"
+
+# Use italic text
+--italic-text=always
+
+# Paging
+--paging=auto
