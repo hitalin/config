@@ -4,11 +4,11 @@ name:                xmonad-config
 version:             0.1.0.0
 -- synopsis:
 -- description:
-homepage:            https://gitlab.com/i0z0m/config#readme
+homepage:            https://github.com/hitalin/config#readme
 license:             BSD-3-Clause
 license-file:
-author:              i0z0m
-maintainer:          i0z0mu@gmail.com
+author:              hitalin
+maintainer:          hitalin@users.noreply.github.com
 copyright:           2024 KIYOSE izumu
 category:            Simple
 build-type:          Simple
