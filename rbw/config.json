@@ -1,0 +1,7 @@
+{
+  "email": "hitalin@proton.me",
+  "base_url": "https://vault.hital.in",
+  "identity_url": "https://vault.hital.in/identity",
+  "lock_timeout": 3600,
+  "pinentry": "pinentry-curses"
+}
