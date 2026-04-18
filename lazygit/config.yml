@@ -28,11 +28,10 @@ gui:
       - "#89b4fa"
     unstagedChangesColor:
       - "#f38ba8"
-
 git:
-  paging:
-    colorArg: always
-    pager: delta --dark --paging=never
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never
   commit:
     signOff: false
     verbose: default
@@ -48,30 +47,26 @@ git:
   autoRefresh: true
   fetchAll: true
   branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium {{branchName}} --"
-  allBranchesLogCmd: "git log --graph --all --color=always --abbrev-commit --decorate --date=relative --pretty=medium"
   overrideGpg: false
   disableForcePushing: false
-
+  allBranchesLogCmds:
+    - git log --graph --all --color=always --abbrev-commit --decorate --date=relative --pretty=medium
 os:
   editPreset: vim
   edit: "vim {{filename}}"
   editAtLine: "vim +{{line}} {{filename}}"
   editAtLineAndWait: "vim +{{line}} {{filename}}"
   openDirInEditor: "vim {{dir}}"
-
 refresher:
   refreshInterval: 10
   fetchInterval: 60
-
 update:
   method: never
-
 confirmOnQuit: false
 quitOnTopLevelReturn: false
 disableStartupPopups: true
 notARepository: prompt
 promptToReturnFromSubprocess: true
-
 keybinding:
   universal:
     quit: "q"
@@ -123,7 +118,6 @@ keybinding:
     filteringMenu: "<c-s>"
     diffingMenu: "W"
     diffingMenu-alt: "<c-e>"
-
   files:
     commitChanges: "c"
     commitChangesWithoutHook: "w"
@@ -137,7 +131,6 @@ keybinding:
     viewResetOptions: "D"
     fetch: "f"
     toggleTreeView: "`"
-
   branches:
     createPullRequest: "o"
     viewPullRequestOptions: "O"
@@ -151,7 +144,6 @@ keybinding:
     pushTag: "P"
     setUpstream: "u"
     fetchRemote: "f"
-
   commits:
     squashDown: "s"
     renameCommit: "r"
@@ -172,19 +164,15 @@ keybinding:
     checkoutCommit: "<space>"
     resetCherryPick: "<c-R>"
     copyCommitMessageToClipboard: "<c-y>"
-
   stash:
     popStash: "g"
-
   commitFiles:
     checkoutCommitFile: "c"
-
   main:
     toggleDragSelect: "v"
     toggleDragSelect-alt: "V"
     toggleSelectHunk: "a"
     pickBothHunks: "b"
-
   submodules:
     init: "i"
     update: "u"
