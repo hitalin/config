@@ -43,7 +43,7 @@ git:
     showGraph: always
     showWholeGraph: false
   skipHookPrefix: WIP
-  autoFetch: true
+  autoFetch: false
   autoRefresh: true
   fetchAll: true
   branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium {{branchName}} --"
