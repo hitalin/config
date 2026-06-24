@@ -77,6 +77,16 @@
     # EDITOR = "emacs";
   };
 
+  # direnv + nix-direnv: `use flake` の評価結果をキャッシュし、flake ディレクトリ
+  # への出入りを一瞬にする（flake.nix / flake.lock 変更時のみ再評価）。
+  # nix-direnv.enable が ~/.config/direnv/lib/hm-nix-direnv.sh を配置する。
+  # zsh の hook は dotfiles の .zshrc で手動設定済みのため無効化。
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+    enableZshIntegration = false;
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
