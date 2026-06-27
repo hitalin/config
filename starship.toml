@@ -3,13 +3,18 @@ $time\
 $username\
 $hostname\
 $directory\
+$direnv\
 $git_branch\
+$git_commit\
 $git_state\
 $git_status\
-$cmd_duration\
 $line_break\
+$nodejs\
 $python\
+$status\
 $character"""
+
+right_format = """$cmd_duration"""
 
 palette = "catppuccin_mocha"
 
@@ -26,6 +31,17 @@ vimcmd_symbol = "[❮](green)"
 [git_branch]
 format = "[$branch]($style)"
 style = "white"
+
+[git_commit]
+format = "[($hash)]($style) "
+commit_hash_length = 7
+style = "green"
+
+[direnv]
+disabled = false
+format = "[$symbol]($style) "
+symbol = "❄ "
+style = "teal"
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
@@ -52,9 +68,19 @@ format = "[$time]($style) "
 time_format = "%Y-%m-%d %H:%M:%S"
 style = "surface2"
 
+[nodejs]
+format = "[$version]($style) "
+style = "green"
+
 [python]
 format = "[$virtualenv]($style) "
 style = "white"
+
+[status]
+disabled = false
+format = "[$symbol$status]($style) "
+symbol = "✖ "
+style = "red"
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
