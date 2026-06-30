@@ -8,10 +8,15 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    # tirith: ターミナルセキュリティ監視（外部 flake、nixpkgs 未収録）
+    tirith = {
+      url = "github:sheeki03/tirith";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
-    { nixpkgs, home-manager, ... }:
+    { nixpkgs, home-manager, tirith, ... }:
     let
       system = "x86_64-linux";
 
@@ -31,8 +36,10 @@
         # the path to your home.nix.
         modules = [ ./home.nix ];
 
-        # Optionally use extraSpecialArgs
-        # to pass through arguments to home.nix
+        # tirith パッケージを home.nix へ受け渡す
+        extraSpecialArgs = {
+          tirith = tirith.packages.${system}.default;
+        };
       };
     };
 }

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, tirith, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -27,6 +27,7 @@
     pkgs.rbw
     pkgs.yazi
     pkgs.terraform
+    tirith # ターミナルセキュリティ監視（github:sheeki03/tirith）
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
